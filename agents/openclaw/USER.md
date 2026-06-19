@@ -25,3 +25,4 @@ The more you know, the better you can help. But remember — you're learning abo
 ## Related
 
 - [Agent workspace](/concepts/agent-workspace)
+- test-symlink: 2026-06-19T14:17:46+00:00
