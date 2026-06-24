@@ -1,3 +1,9 @@
+---
+title: "知识库总控台"
+tags: ['meta']
+updated: 2026-06-24
+---
+
 # 知识库总控台
 
 > 服务器本地 Obsidian vault 自动整理索引。
@@ -11,12 +17,15 @@
 
 ## 快速入口
 
+- [[_meta/obsidian-operating-logic|Obsidian 运行逻辑]]
 - [[_meta/catalog|全量目录]]
 - [[_meta/source-map|来源地图]]
 - [[_meta/duplicates|重复内容报告]]
 - [[_meta/orphans|孤立笔记报告]]
 - [[_meta/tags|主题标签索引]]
 - [[_meta/needs-review|待整理清单]]
+- [[全球咨询调研/README|全球咨询调研]]
+- [[记忆治理/README|记忆治理]]
 
 ## 一级分类
 

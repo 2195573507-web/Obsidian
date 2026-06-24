@@ -1,0 +1,245 @@
+---
+title: "OpenClaw / Hermes Skills 整理报告 — 2026-06-24"
+tags: ['skills', 'governance']
+updated: 2026-06-24
+---
+
+# OpenClaw / Hermes Skills 整理报告 — 2026-06-24
+
+- 生成时间：2026-06-24T03:02:07+08:00 / 2026-06-23T19:02:07+00:00
+- 策略：只巡检、索引和报告；不自动删除、移动、禁用或重写 live skills。
+- 当前模型状态提醒：服务器现在不使用千问/qwen；旧 qwen 相关记忆按历史配置处理。
+
+## 摘要
+
+- 扫描 skills：83
+- 有问题条目：18
+- 重名 skill name：1
+- 备注/可能陈旧条目：2
+
+## 需要关注的问题
+
+- `qqbot-channel` — OpenClaw plugin skills / `/root/.openclaw/plugin-skills/qqbot-channel`
+  - description is long (>180 chars)
+  - broken relative markdown link: {user.avatar}
+  - broken relative markdown link: URL
+  - broken relative markdown link: URL
+- `apple` — Hermes skills / `/root/.hermes/skills/apple`
+  - missing SKILL.md
+- `autonomous-ai-agents` — Hermes skills / `/root/.hermes/skills/autonomous-ai-agents`
+  - missing SKILL.md
+- `creative` — Hermes skills / `/root/.hermes/skills/creative`
+  - missing SKILL.md
+- `data-science` — Hermes skills / `/root/.hermes/skills/data-science`
+  - missing SKILL.md
+- `devops` — Hermes skills / `/root/.hermes/skills/devops`
+  - missing SKILL.md
+- `email` — Hermes skills / `/root/.hermes/skills/email`
+  - missing SKILL.md
+- `github` — Hermes skills / `/root/.hermes/skills/github`
+  - missing SKILL.md
+- `hermes-dashboard` — Hermes skills / `/root/.hermes/skills/hermes-dashboard`
+  - description is long (>180 chars)
+- `intelligence-cron-pipeline` — Hermes skills / `/root/.hermes/skills/intelligence-cron-pipeline`
+  - description is long (>180 chars)
+- `media` — Hermes skills / `/root/.hermes/skills/media`
+  - missing SKILL.md
+- `mlops` — Hermes skills / `/root/.hermes/skills/mlops`
+  - missing SKILL.md
+- `note-taking` — Hermes skills / `/root/.hermes/skills/note-taking`
+  - missing SKILL.md
+- `productivity` — Hermes skills / `/root/.hermes/skills/productivity`
+  - missing SKILL.md
+- `research` — Hermes skills / `/root/.hermes/skills/research`
+  - missing SKILL.md
+- `smart-home` — Hermes skills / `/root/.hermes/skills/smart-home`
+  - missing SKILL.md
+- `social-media` — Hermes skills / `/root/.hermes/skills/social-media`
+  - missing SKILL.md
+- `software-development` — Hermes skills / `/root/.hermes/skills/software-development`
+  - missing SKILL.md
+- duplicate name `github`: OpenClaw bundled skills `/root/.local/lib/node_modules/openclaw/skills/github`; Hermes skills `/root/.hermes/skills/github`
+
+## Skills 索引
+
+### OpenClaw plugin skills (6)
+
+- `browser-automation` — Use when controlling web pages with the OpenClaw browser tool, especially multi-step flows, login checks, tab management, or recovery from stale refs/timeouts.
+  - path: `/root/.openclaw/plugin-skills/browser-automation`; files: 1; size: 4.8 KiB; mtime: 2026-06-19
+- `obsidian-vault-maintainer` — Maintain an Obsidian-friendly memory wiki vault with wikilinks, frontmatter, and official Obsidian CLI awareness.
+  - path: `/root/.openclaw/plugin-skills/obsidian-vault-maintainer`; files: 1; size: 1.0 KiB; mtime: 2026-06-19
+  - notes: no top-level # heading
+- `qqbot-channel` ⚠️ — QQ channel management skill. Use qqbot_channel_api to list guilds and channels, inspect members, publish posts, manage announcements, and work with schedules through the QQ Open Platform HTTP API with automatic token authentication.
+  - path: `/root/.openclaw/plugin-skills/qqbot-channel`; files: 2; size: 25.6 KiB; mtime: 2026-06-19
+- `qqbot-media` — QQBot rich media send and receive support. Use <qqmedia> tags to send image, voice, video, or file attachments, with the media type inferred from the file extension.
+  - path: `/root/.openclaw/plugin-skills/qqbot-media`; files: 1; size: 1.8 KiB; mtime: 2026-06-19
+- `qqbot-remind` — QQBot scheduled reminders. Create, list, and cancel one-time or recurring reminders when a QQ conversation involves reminders, alarms, or scheduled tasks.
+  - path: `/root/.openclaw/plugin-skills/qqbot-remind`; files: 1; size: 6.2 KiB; mtime: 2026-06-19
+- `wiki-maintainer` — Maintain the OpenClaw memory wiki vault with deterministic pages, managed blocks, and source-backed updates.
+  - path: `/root/.openclaw/plugin-skills/wiki-maintainer`; files: 1; size: 1.7 KiB; mtime: 2026-06-19
+  - notes: no top-level # heading
+
+### OpenClaw bundled skills (57)
+
+- `1password` — Set up and use 1Password CLI for sign-in, desktop integration, and reading or injecting secrets.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/1password`; files: 3; size: 4.1 KiB; mtime: 2026-06-19
+- `apple-notes` — Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/apple-notes`; files: 1; size: 1.9 KiB; mtime: 2026-06-19
+- `apple-reminders` — List, add, edit, complete, or delete Apple Reminders and reminder lists via remindctl.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/apple-reminders`; files: 1; size: 3.0 KiB; mtime: 2026-06-19
+- `bear-notes` — Create, search, and manage Bear notes via grizzly CLI.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/bear-notes`; files: 1; size: 2.6 KiB; mtime: 2026-06-19
+- `blogwatcher` — Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/blogwatcher`; files: 1; size: 1.4 KiB; mtime: 2026-06-19
+- `blucli` — BluOS CLI (blu) for discovery, playback, grouping, and volume.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/blucli`; files: 1; size: 1.0 KiB; mtime: 2026-06-19
+- `camsnap` — Capture frames or clips from RTSP/ONVIF cameras.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/camsnap`; files: 1; size: 1.1 KiB; mtime: 2026-06-19
+- `canvas` — Present HTML on connected OpenClaw node canvases, navigate/eval/snapshot, and debug canvas host URLs.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/canvas`; files: 1; size: 2.4 KiB; mtime: 2026-06-19
+- `clawhub` — Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/clawhub`; files: 1; size: 1.4 KiB; mtime: 2026-06-19
+- `coding-agent` — Delegate coding work to Codex, Claude Code, or OpenCode as background workers; not simple edits or read-only code lookup.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/coding-agent`; files: 1; size: 4.2 KiB; mtime: 2026-06-19
+- `diagram-maker` — Create SVG/HTML or Excalidraw diagrams for concepts, architecture, flows, and whiteboards.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/diagram-maker`; files: 3; size: 5.5 KiB; mtime: 2026-06-19
+- `discord` — Discord message-tool ops: send/read/edit/delete, react, poll, pin, thread, search, presence, media/components.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/discord`; files: 1; size: 2.4 KiB; mtime: 2026-06-19
+- `eightctl` — Control Eight Sleep pods (status, temperature, alarms, schedules).
+  - path: `/root/.local/lib/node_modules/openclaw/skills/eightctl`; files: 1; size: 1.1 KiB; mtime: 2026-06-19
+- `gemini` — Gemini CLI one-shot prompts, summaries, generation, skills, hooks, MCP, or Gemma routing.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/gemini`; files: 1; size: 1.1 KiB; mtime: 2026-06-19
+- `gh-issues` — Fetch GitHub issues, select candidates, spawn background fix agents, open PRs, and optionally process PR review comments.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/gh-issues`; files: 1; size: 6.1 KiB; mtime: 2026-06-19
+- `gifgrep` — Search GIF providers with CLI/TUI, download results, and extract stills/sheets.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/gifgrep`; files: 1; size: 2.5 KiB; mtime: 2026-06-19
+- `github` — GitHub CLI for issues, PRs, CI/check logs, comments, reviews, releases, repos, and gh api queries.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/github`; files: 1; size: 2.4 KiB; mtime: 2026-06-19
+- `gog` — Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/gog`; files: 1; size: 4.5 KiB; mtime: 2026-06-19
+- `goplaces` — Query Google Places for text search, place details, resolve, reviews, or scriptable JSON via goplaces.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/goplaces`; files: 1; size: 1.4 KiB; mtime: 2026-06-19
+- `healthcheck` — Audit/harden OpenClaw hosts: SSH, firewall, updates, exposure, backups, disk encryption, gateway security.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/healthcheck`; files: 1; size: 2.5 KiB; mtime: 2026-06-19
+- `himalaya` — Himalaya CLI for IMAP/SMTP mail: list, read, search, compose, reply, forward, copy, move, delete.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/himalaya`; files: 3; size: 9.4 KiB; mtime: 2026-06-19
+- `imsg` — iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/imsg`; files: 1; size: 2.9 KiB; mtime: 2026-06-19
+- `mcporter` — List, configure, authenticate, call, and inspect MCP servers/tools with mcporter over HTTP or stdio.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/mcporter`; files: 1; size: 1.6 KiB; mtime: 2026-06-19
+- `meme-maker` — Search meme templates, suggest formats, and generate local or hosted image memes.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/meme-maker`; files: 3; size: 27.2 KiB; mtime: 2026-06-19
+- `model-usage` — Summarize CodexBar local cost logs by model for Codex or Claude, including current or full breakdowns.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/model-usage`; files: 4; size: 15.2 KiB; mtime: 2026-06-19
+- `nano-pdf` — Edit PDFs with natural-language instructions using the nano-pdf CLI.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/nano-pdf`; files: 1; size: 0.9 KiB; mtime: 2026-06-19
+- `node-connect` — Diagnose OpenClaw Android, iOS, or macOS node pairing, QR/setup code, route, auth, and connection failures.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/node-connect`; files: 1; size: 4.4 KiB; mtime: 2026-06-19
+- `node-inspect-debugger` — Debug Node.js with node inspect, --inspect, breakpoints, CDP, heap, and CPU profiles.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/node-inspect-debugger`; files: 1; size: 3.5 KiB; mtime: 2026-06-19
+- `notion` — Notion CLI/API for pages, Markdown content, data sources, files, comments, search, Workers, and raw API calls.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/notion`; files: 1; size: 3.8 KiB; mtime: 2026-06-19
+- `obsidian` — Work with Obsidian vaults using the official obsidian CLI: read/search/create/edit notes, tasks, links, properties, plugins.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/obsidian`; files: 1; size: 2.9 KiB; mtime: 2026-06-19
+- `openai-whisper` — Local speech-to-text with the Whisper CLI (no API key).
+  - path: `/root/.local/lib/node_modules/openclaw/skills/openai-whisper`; files: 1; size: 0.9 KiB; mtime: 2026-06-19
+- `openai-whisper-api` — OpenAI Audio Transcriptions API via curl; gpt-4o-transcribe, mini, diarize, or whisper-1.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/openai-whisper-api`; files: 2; size: 5.2 KiB; mtime: 2026-06-19
+- `openhue` — Control Philips Hue lights and scenes via the OpenHue CLI.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/openhue`; files: 1; size: 2.4 KiB; mtime: 2026-06-19
+- `oracle` — Oracle CLI second-model review/debug/refactor/design with selected files, dry-run token checks, API or browser engine.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/oracle`; files: 1; size: 4.8 KiB; mtime: 2026-06-19
+- `ordercli` — Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).
+  - path: `/root/.local/lib/node_modules/openclaw/skills/ordercli`; files: 1; size: 2.3 KiB; mtime: 2026-06-19
+- `peekaboo` — Capture and automate macOS UI with the Peekaboo CLI.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/peekaboo`; files: 1; size: 6.4 KiB; mtime: 2026-06-19
+- `python-debugpy` — Debug Python with pdb, breakpoint(), post-mortem inspection, and debugpy remote attach.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/python-debugpy`; files: 1; size: 2.5 KiB; mtime: 2026-06-19
+- `sag` — ElevenLabs text-to-speech with mac-style say UX.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/sag`; files: 1; size: 2.2 KiB; mtime: 2026-06-19
+- `session-logs` — Search and analyze your own session logs (older/parent conversations) using jq.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/session-logs`; files: 1; size: 4.3 KiB; mtime: 2026-06-19
+- `sherpa-onnx-tts` — Local text-to-speech via sherpa-onnx (offline, no cloud)
+  - path: `/root/.local/lib/node_modules/openclaw/skills/sherpa-onnx-tts`; files: 2; size: 8.4 KiB; mtime: 2026-06-19
+- `skill-creator` — Create, edit, audit, tidy, validate, or restructure AgentSkills and SKILL.md files.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/skill-creator`; files: 7; size: 48.1 KiB; mtime: 2026-06-19
+- `slack` — Slack tool actions: send/read/edit/delete messages, react, pin/unpin, list pins/reactions/emoji, member info.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/slack`; files: 1; size: 1.6 KiB; mtime: 2026-06-19
+- `songsee` — Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/songsee`; files: 1; size: 1.3 KiB; mtime: 2026-06-19
+- `sonoscli` — Control Sonos speakers (discover/status/play/volume/group).
+  - path: `/root/.local/lib/node_modules/openclaw/skills/sonoscli`; files: 1; size: 2.4 KiB; mtime: 2026-06-19
+- `spike` — Run throwaway prototypes to validate feasibility, compare approaches, and report a verdict.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/spike`; files: 1; size: 1.8 KiB; mtime: 2026-06-19
+- `spotify-player` — Terminal Spotify playback/search via spogo (preferred) or spotify_player.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/spotify-player`; files: 1; size: 1.6 KiB; mtime: 2026-06-19
+- `summarize` — Summarize or transcribe URLs, YouTube/videos, podcasts, articles, transcripts, PDFs, and local files.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/summarize`; files: 1; size: 2.1 KiB; mtime: 2026-06-19
+- `taskflow` — Coordinate multi-step detached tasks as one durable TaskFlow job with owner context, state, waits, and child tasks.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/taskflow`; files: 3; size: 7.2 KiB; mtime: 2026-06-19
+- `taskflow-inbox-triage` — Example TaskFlow pattern for inbox triage, intent routing, waiting on replies, and later summaries.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/taskflow-inbox-triage`; files: 1; size: 2.5 KiB; mtime: 2026-06-19
+- `things-mac` — Add, update, list, search, or inspect Things 3 todos, inbox, today, projects, areas, and tags on macOS.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/things-mac`; files: 1; size: 3.3 KiB; mtime: 2026-06-19
+- `tmux` — Control tmux sessions/panes for interactive CLIs: list, capture output, send keys, paste text, monitor prompts.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/tmux`; files: 3; size: 6.9 KiB; mtime: 2026-06-19
+- `trello` — Manage Trello boards, lists, and cards via the Trello REST API.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/trello`; files: 1; size: 2.9 KiB; mtime: 2026-06-19
+- `video-frames` — Extract frames or short clips from videos using ffmpeg.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/video-frames`; files: 2; size: 2.3 KiB; mtime: 2026-06-19
+- `voice-call` — Start voice calls via the OpenClaw voice-call plugin.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/voice-call`; files: 1; size: 1.1 KiB; mtime: 2026-06-19
+- `wacli` — Send third-party WhatsApp messages or sync/search WhatsApp history via wacli, not normal active chats.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/wacli`; files: 1; size: 2.3 KiB; mtime: 2026-06-19
+- `weather` — Current weather and forecasts with web_fetch, falling back to wttr.in curl for locations, rain, temperature, travel planning.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/weather`; files: 1; size: 2.8 KiB; mtime: 2026-06-19
+- `xurl` — xurl CLI for authenticated X posts, replies, reads/search, DMs, media upload, followers, auth status, or raw v2 API calls.
+  - path: `/root/.local/lib/node_modules/openclaw/skills/xurl`; files: 1; size: 2.7 KiB; mtime: 2026-06-19
+
+### Hermes skills (20)
+
+- `apple` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/apple`; files: 1; size: 0.1 KiB; mtime: 2026-06-18
+- `autonomous-ai-agents` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/autonomous-ai-agents`; files: 8; size: 71.2 KiB; mtime: 2026-06-20
+- `creative` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/creative`; files: 57; size: 146.5 KiB; mtime: 2026-06-18
+- `data-science` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/data-science`; files: 2; size: 5.3 KiB; mtime: 2026-06-18
+- `devops` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/devops`; files: 39; size: 201.2 KiB; mtime: 2026-06-24
+- `dogfood` — Exploratory QA of web apps: find bugs, evidence, reports.
+  - path: `/root/.hermes/skills/dogfood`; files: 3; size: 12.1 KiB; mtime: 2026-06-23
+- `email` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/email`; files: 1; size: 0.1 KiB; mtime: 2026-06-18
+- `github` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/github`; files: 16; size: 76.9 KiB; mtime: 2026-06-18
+- `hermes-dashboard` ⚠️ — Develop, modify, and extend Hermes web dashboards — adding API endpoints, editable config panels, inline-edit UI, and service lifecycle management for the management panel (:9100) and system monitor (:9000).
+  - path: `/root/.hermes/skills/hermes-dashboard`; files: 8; size: 52.5 KiB; mtime: 2026-06-22
+- `intelligence-cron-pipeline` ⚠️ — Design and deploy multi-timeslot intelligence/news briefing cron pipelines. Balance daily vs weekly tasks across timezones, avoid late-night pushes, spread evenly across waking hours.
+  - path: `/root/.hermes/skills/intelligence-cron-pipeline`; files: 2; size: 7.9 KiB; mtime: 2026-06-24
+- `media` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/media`; files: 4; size: 8.6 KiB; mtime: 2026-06-18
+- `mlops` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/mlops`; files: 4; size: 0.7 KiB; mtime: 2026-06-18
+- `note-taking` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/note-taking`; files: 4; size: 15.0 KiB; mtime: 2026-06-19
+- `productivity` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/productivity`; files: 2; size: 0.3 KiB; mtime: 2026-06-18
+- `research` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/research`; files: 6; size: 42.7 KiB; mtime: 2026-06-21
+- `shared-agent-memory` — Use the local shared Hermes/OpenClaw long-term memory service to recall, save, and export durable cross-agent memory.
+  - path: `/root/.hermes/skills/shared-agent-memory`; files: 8; size: 26.5 KiB; mtime: 2026-06-23
+- `smart-home` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/smart-home`; files: 1; size: 0.1 KiB; mtime: 2026-06-18
+- `social-media` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/social-media`; files: 1; size: 0.1 KiB; mtime: 2026-06-18
+- `software-development` ⚠️ — （无描述）
+  - path: `/root/.hermes/skills/software-development`; files: 36; size: 195.8 KiB; mtime: 2026-06-23
+- `yuanbao` — Yuanbao (元宝) groups: @mention users, query info/members.
+  - path: `/root/.hermes/skills/yuanbao`; files: 1; size: 3.7 KiB; mtime: 2026-06-18
+
+## 后续建议
+
+- 对 OpenClaw reusable skill 的新增/结构性调整，建议走 `skill_workshop` 提案流程。
+- 对 Hermes skills 的合并、删除、禁用，建议先人工确认；本任务默认不做破坏性操作。

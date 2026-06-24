@@ -1,19 +1,19 @@
 ---
-source_path: /root/.hermes/memories/MEMORY.md
-imported_at: 2026-06-19T13:19:45
-category: agents/hermes
+title: "MEMORY"
+tags: ['agent', 'config']
+updated: 2026-06-24
 ---
 
-Server public IP: 38.55.146.137. Server monitoring dashboard running on port 9000 at /opt/hermes-system-monitor/ using FastAPI + psutil + SQLite + ECharts. UFW active with port 9000 open. Python venv at /opt/hermes-agent/.venv/.
+Server `38.55.146.137`: system monitor `:9000`, Hermes Dashboard `:9100`, OpenClaw `127.0.0.1:18789`, shared memory `:9400` at `/opt/shared-agent-memory`; shared-memory CLI supports layers/expire/context debug/search.
 §
-创建 cron 定时任务时，所有时间应以北京时间（UTC+8）为准，cron 表达式需转换为 UTC（BJT - 8h）。禁止安排北京时间 00:00-07:00 之间的任务。所有任务输出使用中文。多任务流水线应清晰标注 BJT 和 UTC 双时区。
+创建 cron 定时任务默认以北京时间（UTC+8）为准，cron 表达式需转换为 UTC（BJT - 8h）。允许安排任意时段任务（包括 BJT 00:00-07:00），按用户指定执行。所有任务输出使用中文，多任务流水线标注 BJT/UTC。
 §
-Hermes management dashboard architecture: backend at /opt/hermes-dashboard/backend.py (FastAPI, port 9100), frontend at /opt/hermes-dashboard/static/index.html. Reads state.db (~/.hermes/state.db) and config.yaml (~/.hermes/config.yaml). System monitor panel is separate at /opt/hermes-system-monitor/ (port 9000). Both use uvicorn + StaticFiles pattern. Config.yaml model section: model.default, model.provider, model.base_url. Server restart uses: kill existing PIDs on the port, then python3 backend.py as background process.
+Dashboards are systemd-managed: system-monitor `/opt/hermes-system-monitor` on `:9000`, management `/opt/hermes-dashboard` on `:9100`; restart by killing PID and letting systemd auto-restart; Hermes config at `~/.hermes/config.yaml`.
 §
-Patch tool pitfall: when inserting a new code block before an existing decorated function, be careful with `old_string` — if you match the decorator line (e.g. @app.get("/api/status")), it will be replaced and the function below loses its decorator. Either include the decorator in new_string or use a broader old_string that includes the function signature, then add the decorator explicitly in new_string. Follow-up patches to restore decorators work fine.
+用户常用中转站：Hermes/OpenClaw 主要走 `sub.zmjjkkk.fun/v1`；OpenClaw `myproxy` 默认 `gpt-5.5`。备用 `pool.gptstore.club/v1` key 不匹配。OpenClaw 本机有 curl chat-completions 兜底补丁，`openclaw-gateway.service` 已持久设置。
 §
-用户已放开所有权限：终端命令无需确认直接执行。approvals: mode=auto, timeout=300, cron_mode=allow, 所有confirm=false。项目：系统监控 /opt/hermes-system-monitor/(:9000) + Dashboard /opt/hermes-dashboard/(:9100)。配置 /root/.hermes/config.yaml，数据库 ~/.hermes/state.db。公网IP 38.55.146.137，BJT时区，venv /opt/hermes-agent/.venv/bin/python3。
+中转站诊断：排查 OpenClaw/Hermes 连接问题时优先测当前中转站 `/models` 和逐模型探活，区分 401/502/503；不要主动建议换 `baseUrl`，除非当前中转站整体不可用。
 §
-每日3:00-5:00 BJT自动学习任务已创建(cron d4d3343581aa)，输出到 /opt/hermes-learning/YYYY-MM-DD/。学习范围：App/Web/代码/AI开源/嵌入式。输出projects.md+summary.md+archive.json。
+长时间研究任务(7h+)：用多轨道 cron job（每10分钟一波、3轨道并行）比 delegate_task 更稳定，后者会被中断。用户明确要求学习任务只生成报告、不改任何代码。服务器项目全部是 FastAPI + 原生HTML/JS/CSS，无现代前端框架。
 §
-用户使用中转站 pool.gptstore.club/v1（非直连 OpenAI/DeepSeek）：OpenClaw 和 Hermes 均通过此中转站。Hermes config: provider=openai, model=gpt-5.5。Dashboard 切换 provider 后须验证 model 段写入成功 — Hermes 可能覆写 model.provider。
+新服务器 `192.204.35.79`：OpenResty (Nginx) + MySQL:3306 + SSH:22，静态首页130字节。压测可达 7000并发/420 req/s/100%成功率。用户无SSH访问，仅远程操作。

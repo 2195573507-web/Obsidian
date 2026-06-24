@@ -1,27 +1,21 @@
 ---
-source_path: /root/.openclaw/workspace/USER.md
-imported_at: 2026-06-19T13:19:45
-category: agents/openclaw
+title: "USER"
+tags: ['agent', 'config']
+updated: 2026-06-24
 ---
 
-# USER.md - About Your Human
-
-_Learn about the person you're helping. Update this as you go._
-
-- **Name:** 至秦
-- **What to call them:** 至秦
-- **Pronouns:** _(optional)_
-- **Timezone:** UTC
-- **Notes:**
-
-## Context
-
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
-
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
-
-## Related
-
-- [Agent workspace](/concepts/agent-workspace)
+Name: 至秦。用户偏好直接行动、少确认；说继续/完成/修复时，希望助手连续推进到可验证完成；临时改优先级时立即暂停原计划。
+§
+用户在同一服务器上同时使用 Hermes、OpenClaw、QQBot、Sub2API，重视稳定回复、可观测性、记忆互通、dashboard/自动化管理，以及模型路由透明度。
+§
+用户偏好：需要命令时给一整段可执行命令；配置 provider/base URL/key 时先查现状再改，不能代写凭证则给本机命令。
+§
+用户不希望默认自动执行破坏性维护：Hermes skills 整理、服务器文件整理、重要记忆删除/合并、Docker/日志清理等应先生成候选报告并等待确认；涉及 Hermes skills 尤其要先确认或跳过。
+§
+用户希望 OpenClaw 默认主模型保持为中转站 GPT（如 `myproxy/gpt-5.5`）；本地 Qwen 只作临时兜底/压缩/低风险任务。测试 local-first/中转路由时需明确标注回复来源。
+§
+做服务器/Web/管理后台重构复刻时直接做成可上线完整版并对齐 upstream；学习调研时写长篇全面中文报告，不要多 agent 并行，自己完成；不改服务器代码时只写报告并给保存路径。
+§
+用户期望端到端执行服务器配置任务：如取消反代/删除证书需同时处理 Nginx、Certbot/证书、reload 和验证，执行前保留可恢复备份；做管理后台二开时，新功能应原生集成到现有 UI，手机端不拥挤，按钮操作有明确成功/失败反馈。
+§
+用户希望 Hermes/OpenClaw 对长期记忆和共享记忆进行主动但安全的例行维护：北京时间 09:00-23:00 每小时轮流巡检，默认只做健康检查、过期处理、导出/索引和候选报告；删除、禁用、合并重要记忆需人工确认。用户也偏好这类策略说明尽量简洁。
