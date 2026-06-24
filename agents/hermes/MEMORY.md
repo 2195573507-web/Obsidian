@@ -14,6 +14,6 @@ Dashboards are systemd-managed: system-monitor `/opt/hermes-system-monitor` on `
 §
 中转站诊断：排查 OpenClaw/Hermes 连接问题时优先测当前中转站 `/models` 和逐模型探活，区分 401/502/503；不要主动建议换 `baseUrl`，除非当前中转站整体不可用。
 §
-长时间研究任务(7h+)：用多轨道 cron job（每10分钟一波、3轨道并行）比 delegate_task 更稳定，后者会被中断。用户明确要求学习任务只生成报告、不改任何代码。服务器项目全部是 FastAPI + 原生HTML/JS/CSS，无现代前端框架。
+长研究任务用 cron 多轨道比 delegate_task 稳（后者易中断）。学习任务只生成报告不改代码。用户服务器技术栈：FastAPI + 原生HTML/JS/CSS，无现代前端框架。
 §
-新服务器 `192.204.35.79`：OpenResty (Nginx) + MySQL:3306 + SSH:22，静态首页130字节。压测可达 7000并发/420 req/s/100%成功率。用户无SSH访问，仅远程操作。
+服务器 `192.204.35.79`：OpenResty (Nginx) + MySQL:3306 + SSH:22，静态首页130字节。15分钟压测：128万次HTTP请求，1430 req/s，99.68%成功率，抗压稳定。用户无SSH，仅远程操作。
