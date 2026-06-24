@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-23T19:02:07.165148+00:00",
-  "date": "2026-06-24",
+  "generatedAt": "2026-06-24T19:04:47.741625+00:00",
+  "date": "2026-06-25",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -986,9 +986,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 39,
-      "bytes": 206064,
-      "mtime": 1782233909.1564794
+      "files": 48,
+      "bytes": 248877,
+      "mtime": 1782322576.0925217
     },
     {
       "root": "Hermes skills",
@@ -1032,9 +1032,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 16,
-      "bytes": 78708,
-      "mtime": 1781774469.5099053
+      "files": 17,
+      "bytes": 87396,
+      "mtime": 1782322645.0687592
     },
     {
       "root": "Hermes skills",
@@ -1064,9 +1064,9 @@
         "description is long (>180 chars)"
       ],
       "notes": [],
-      "files": 2,
-      "bytes": 8054,
-      "mtime": 1782233899.8283434
+      "files": 4,
+      "bytes": 17867,
+      "mtime": 1782300584.7675102
     },
     {
       "root": "Hermes skills",
@@ -1144,9 +1144,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 6,
-      "bytes": 43693,
-      "mtime": 1782037469.4499006
+      "files": 18,
+      "bytes": 135546,
+      "mtime": 1782319983.8716807
     },
     {
       "root": "Hermes skills",
@@ -1158,9 +1158,9 @@
       "heading": "Shared Agent Memory",
       "issues": [],
       "notes": [],
-      "files": 8,
-      "bytes": 27175,
-      "mtime": 1782215487.5276868
+      "files": 9,
+      "bytes": 29411,
+      "mtime": 1782265949.2936606
     },
     {
       "root": "Hermes skills",
@@ -1206,9 +1206,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 36,
-      "bytes": 200542,
-      "mtime": 1782227217.2186093
+      "files": 41,
+      "bytes": 236862,
+      "mtime": 1782322915.4216468
     },
     {
       "root": "Hermes skills",
