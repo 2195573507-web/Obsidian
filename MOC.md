@@ -18,6 +18,7 @@ tags: [moc, navigation, vault]
 - [[agents/hermes/MEMORY|Hermes 工作记忆]]
 - [[agents/hermes/index|Hermes 详情]]
 - [[agents/openclaw/index|OpenClaw 详情]]
+- [[agents/openclaw/MEMORY|OpenClaw 工作记忆]]
 
 ## 🧠 共享记忆
 - [[shared-memory/README|共享记忆说明]]
