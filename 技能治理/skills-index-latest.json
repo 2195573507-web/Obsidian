@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-24T19:04:47.741625+00:00",
-  "date": "2026-06-25",
+  "generatedAt": "2026-06-25T19:00:15.789219+00:00",
+  "date": "2026-06-26",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -912,6 +912,22 @@
     },
     {
       "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/.curator_backups",
+      "rel": ".curator_backups",
+      "has_skill_md": false,
+      "name": ".curator_backups",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 3,
+      "bytes": 509742,
+      "mtime": 1782383499.5948246
+    },
+    {
+      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/apple",
       "rel": "apple",
       "has_skill_md": false,
@@ -986,9 +1002,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 48,
-      "bytes": 248877,
-      "mtime": 1782322576.0925217
+      "files": 54,
+      "bytes": 275801,
+      "mtime": 1782406872.505492
     },
     {
       "root": "Hermes skills",
@@ -1158,9 +1174,9 @@
       "heading": "Shared Agent Memory",
       "issues": [],
       "notes": [],
-      "files": 9,
-      "bytes": 29411,
-      "mtime": 1782265949.2936606
+      "files": 10,
+      "bytes": 33092,
+      "mtime": 1782348611.5549643
     },
     {
       "root": "Hermes skills",
