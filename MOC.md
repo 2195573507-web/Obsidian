@@ -45,6 +45,9 @@ tags: [moc, navigation, vault]
 
 ## 📋 计划与方案
 - [[plans/index|计划总览]]
+- [[plans/system-monitor-architecture-optimization-plan|System Monitor 架构优化计划]]
+- [[plans/hermes-openclaw-vision-paused-marker|Hermes / OpenClaw 读图能力集成暂停标记]]
+- [[agents/planning/Hermes-OpenClaw-智能增强路线图|Hermes / OpenClaw 智能增强路线图]]
 - [[plans/memory-read-optimization-plan|记忆优化方案]]
 - [[plans/agent-collab-platform-record|Agent 协作平台]]
 - [[plans/server-zmjjkkk-fun-plan|服务器域名计划]]
