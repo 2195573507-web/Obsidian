@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-24T18:13:54+00:00
+Updated: 2026-06-25T00:09:14+00:00
 
 ## Active Memories by Layer
 
@@ -32,6 +32,8 @@ Updated: 2026-06-24T18:13:54+00:00
 
 ### Service State
 
+- **[service_state/shared]** 2026-06-25 记忆架构第一阶段（非 OpenClaw 侧）已执行：Hermes MEMORY.md 重构为 Working Memory 四区块；共享记忆中 8 条 OpenClaw temporary 迁移噪音和 3 条重复 qwen 历史细节已 disabled；保留 qwen 当前禁用/移除的两条高优先级 canonical decision。
+  - id: `memory-cleanup-2026-06-25-hermes-shared`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `hermes, shared-memory, memory-architecture, cleanup`
 - **[service_state/shared]** Hermes has a dedicated shared-agent-memory skill at /root/.hermes/skills/shared-agent-memory/SKILL.md. For durable cross-agent recall/save, Hermes should use shared-memory-client against http://127.0.0.1:9400; OpenClaw indexes the shared export with local Ollama nomic-embed-text embeddings.
   - id: `7731e550-13b3-45af-b82f-6667e7dab6fa`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `hermes, openclaw, shared-memory`
 - **[service_state/shared]** 已创建每日 Docker/磁盘/日志增长巡检任务：每天 BJT 11:20（UTC 03:20）运行，任务 ID 9539f426aa9f。任务只读检查 Docker 容器健康、磁盘/inode、大目录增长、日志/WAL/数据库风险；明确禁止删除、移动、清理、重启或修改代码/配置。
@@ -61,12 +63,6 @@ Updated: 2026-06-24T18:13:54+00:00
   - id: `f63df781-1af1-461f-90a2-81938d70b525`; source: `openclaw`; importance: `95`; sensitivity: `shared`; tags: `cron, skills, hermes, openclaw, schedule`
 - **[decision/shared]** 用户在 2026-06-23 明确更正：服务器现在没有使用千问/qwen；所有关于 qwen2.5、千问、Ollama qwen、qwen-warm、qwen local-task/local-first 的旧记忆都应按历史配置/过去式理解，不代表当前运行状态。今后回答服务器模型路由或后台任务时，优先采用此当前状态：不再使用千问。
   - id: `54c31b65-b94e-4e65-af53-e81b785e5419`; source: `openclaw`; importance: `95`; sensitivity: `shared`; tags: `qwen, 千问, hermes, openclaw, routing`
-- **[decision/shared]** [历史/已废弃] 曾启用本地轻量任务池，qwen2.5:3b 做低风险任务，8-12s 超时回退 GPT。用户 2026-06-23 明确不再使用千问，所有请求默认走中转 GPT。此条仅作历史记录。
-  - id: `995e0b1a-b147-4778-9b16-55d40801e3c8`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `openclaw, hermes, qwen, local-task-pool, historical`
-- **[decision/shared]** [历史/已废弃] Hermes 曾接入 shared local-task-queue，用 qwen2.5:3b 做异步 summary。用户 2026-06-23 明确不再使用千问。此条仅作历史记录。
-  - id: `8348467d-98d4-47a0-a476-80d5e1d87eab`; source: `openclaw`; importance: `9`; sensitivity: `shared`; tags: `hermes, local-task-queue, qwen, shared-memory, historical`
-- **[decision/shared]** [历史/已废弃] 曾经的模型路由策略：主对话走 GPT，qwen2.5:3b 用于 local-task-pool 轻量任务。但用户 2026-06-23 明确：服务器不再使用千问/qwen，所有请求走中转 GPT。此条仅作历史记录。
-  - id: `87728452-e5de-4fc1-9a23-3531d6131d43`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `hermes, openclaw, qwen, routing, historical`
 - **[decision/openclaw]** ---
 source_path: /root/.openclaw/workspace/AGENTS.md
 imported_at: 2026-06-19T13:19:45
@@ -156,25 +152,6 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `a433c3eb-4ed5-4311-9521-6b630035b258`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `openclaw, skill-workshop, failure`
 - **[failure/openclaw]** Recent JS bug: user reported `加载网关状态失败: Can't find variable: loadKnowledgeStatus`; fixed by adding missing `loadKnowledgeStatus` function to dashboard frontend to fetch/render `:9200` knowledge status. Dashboard did not require restart; refresh page.
   - id: `3b7ad1d4-ceec-415c-a36b-b2df4ed8f825`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`
-
-### Temporary
-
-- **[temporary/openclaw]** User is 至秦. They manage Linux server `38.55.146.137` running two AI agents: Hermes and OpenClaw.
-  - id: `ea72c393-4ea8-4569-be76-193a03fc06d0`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** Web services on server: `:9000` Hermes System Monitor, `:9100` Hermes Dashboard / agent console, `:9200` Obsidian knowledge web / FileBrowser target.
-  - id: `8a31484a-edd3-4c51-810e-cfb0b4e611d1`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** User preference: prioritizes full functionality over security; server is headless Linux; has domain `zmjjkkk.fun`.
-  - id: `747eab00-8889-4b64-95c0-2ccd34538bf7`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** SSH public key provided by user: `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDaQZWZozb0mCR+11ytvutnWaMc7s5OWlBCm1JwaiZGs esp-server`.
-  - id: `4711d304-0abe-4ad3-a98e-7bb2ede77d9c`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** Obsidian shared-memory plan: use `/root/obsidian-vault/` as source of truth, shared via Git, with OpenClaw/Hermes memory symlinked into vault; user local Obsidian opens cloned vault.
-  - id: `878c4506-8c11-44c2-8be0-3dbb0ad5755d`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** Prior work completed: Docker `hermes-openai` removed; SSH PubkeyAuthentication enabled; UFW port 22 opened; Hermes skills cleaned from 57 to 37; vault cleaned from 1271 files/14MB to 38 files/700K; optimization docs created.
-  - id: `d109cd36-3ef6-4f0b-ad94-fa9b52d636bb`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** User paused Hermes Dashboard OpenClaw config integration earlier and said not to start Obsidian plan (`不启动`).
-  - id: `f44040bb-ec47-4ac6-a3aa-2fee96eb7d45`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
-- **[temporary/openclaw]** Recent web-health task: checked `:9000`, `:9100`, `:9200`; all services/APIs healthy. Dashboard CSS bug `--btn-hover` undefined was fixed. Token/cost trend API issue was a test-key mistake; data was normal.
-  - id: `8ac40162-6f7f-4994-9a7c-3a4024b52e1c`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`; expires: `2026-07-21T03:10:54+00:00`
 
 ### Todo
 
