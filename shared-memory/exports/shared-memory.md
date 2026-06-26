@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-25T15:01:57+00:00
+Updated: 2026-06-26T04:00:16+00:00
 
 ## Active Memories by Layer
 
@@ -133,6 +133,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-06-26：完成 12 个开源项目学习，覆盖监控面板、LLM 网关、AI ChatOps、Web Dashboard UI、后端数据、性能安全运维。高价值结论：轻量监控优先只读 inventory 与小组件面板；LLM 网关分离兼容接口/路由/限流/观测；SSE/WebSocket 反代要关注 buffering、timeout、Upgrade；SQLite 单机优先 WAL/备份/短事务；任何部署新组件或改代码配置需用户确认。报告路径：/root/daily-open-source-learning/2026-06-26/reports/00-summary.md；完整目录：/root/daily-open-source-learning/2026-06-26
+  - id: `557c4906-9210-40a6-ad60-2023d4566040`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-25：研究13个项目（LiteLLM/Open WebUI/Dify/Langfuse/AnythingLLM/LibreChat/One-API/New-API/Helicone/shadcn-ui/TanStack/bpftrace/fastapi-best-practices）。核心结论：(1) LLM Gateway 四件套=虚拟密钥+负载均衡+Fallback+限流；(2) LibreChat Resumable Streams 是 SSE 最佳实践；(3) Dify ssrf_proxy 容器隔离防 SSRF；(4) ClickHouse 适合 LLM 日志存储；(5) Langfuse @observe() 极简埋点。报告路径：/root/daily-open-source-learning/2026-06-25/reports/
   - id: `542477c2-9aa4-4f26-995d-735239762989`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source, llm-gateway, ui`
 - **[success/shared]** 每日开源学习 2026-06-24 定时核验：已确认报告目录 /root/daily-open-source-learning/2026-06-24 下 reports/00-summary.md、01-projects-studied.md、02-ui-patterns.md、03-backend-patterns.md、04-performance-security-ops.md、05-user-project-optimization.md 与 server-inventory 盘点文件存在。学习重点包括监控运维面板、AI Agent/API Gateway、Web Dashboard UI、后端实时通信、性能安全部署；本次仅写报告与 shared-memory，未修改代码、配置或服务。报告路径：/root/daily-open-source-learning/2026-06-24

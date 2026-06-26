@@ -2,7 +2,7 @@
 title: Hermes / OpenClaw 智能增强路线图
 tags: [agents, hermes, openclaw, roadmap, server]
 created: 2026-06-25
-updated: 2026-06-26
+updated: 2026-06-25
 ---
 
 # Hermes / OpenClaw 智能增强路线图
@@ -369,38 +369,6 @@ Hermes 可配置 STT / TTS。
 - 更适合手机端使用。
 
 ---
-
-
-
-## 已归档：Atlas UI 重构阶段（2026-06-26）
-
-状态：已归档，后续不再作为当前主线继续追 UI 小修；如需再改，另开维护项。
-
-已完成范围：
-
-- 非 upstream/sub2api Web 服务统一迁移到 `Atlas` 命名和五位端口。
-- Nginx 非 upstream/sub2api 入口已指向新 Atlas 服务。
-- 统一明亮 shadcn-like 顶栏 UI：Control、Observe、Agents、Notes、Files、Daily、Collab。
-- `Atlas Observe`：系统指标、历史曲线、API/HTTP/Docker/DB/TCP 诊断、CPU per-core、Top Processes。
-- `Atlas Agents`：Agent 状态、日志/重启入口、Provider 新增/保存/测试/切换/启停/删除、模型勾选保存、Sessions 表。
-- `Atlas Notes`：Vault 文件、RAG 搜索、Context、Markdown 渲染、分类图谱、邻接高亮和邻接列表。
-- `Atlas Files`：目录浏览、路径摘要、面包屑、排序、dotfiles 开关、文本/图片预览、下载和 raw 打开。
-- `Atlas Daily`：日报列表、分类筛选、过滤计数、Markdown 阅读。
-- `Atlas Control`：服务地图、服务详情、日志过滤、Provider Watch、Unified Recall。
-
-验证归档：
-
-- 7 个 Atlas 前端 inline JS `node --check` 通过。
-- 7 个 Atlas systemd 服务均 active。
-- 公网入口 `monitor` / `agent` / `notes` / `server` 均 200。
-- 功能接口验证通过：Observe history/detailed、Agents providers、Notes graph/context、Files list/preview/raw download、Daily summaries、Collab tasks、Control overview/logs。
-- `nginx -t` successful。
-- API key 输出已脱敏，Provider 保存时空 key 不覆盖原 key。
-
-保留边界：
-
-- upstream/sub2api 业务代码和路由不纳入本阶段改动。
-- 后续主线回到路线图“马上值得做”：Obsidian + shared-memory + Hermes/OpenClaw 自动召回、自愈巡检、任务队列。
 
 ## 推荐实施路线
 
