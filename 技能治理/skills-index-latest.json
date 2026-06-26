@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-25T19:00:15.789219+00:00",
-  "date": "2026-06-26",
+  "generatedAt": "2026-06-26T19:01:56.530592+00:00",
+  "date": "2026-06-27",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -31,7 +31,7 @@
       "notes": [],
       "files": 1,
       "bytes": 4936,
-      "mtime": 1781858940.8937638
+      "mtime": 1782455914.9415255
     },
     {
       "root": "OpenClaw plugin skills",
@@ -47,7 +47,7 @@
       ],
       "files": 1,
       "bytes": 1073,
-      "mtime": 1781858940.8937638
+      "mtime": 1782455914.9455254
     },
     {
       "root": "OpenClaw plugin skills",
@@ -110,7 +110,7 @@
       ],
       "files": 1,
       "bytes": 1760,
-      "mtime": 1781858940.8977637
+      "mtime": 1782455914.9495254
     },
     {
       "root": "OpenClaw bundled skills",
@@ -123,8 +123,8 @@
       "issues": [],
       "notes": [],
       "files": 3,
-      "bytes": 4227,
-      "mtime": 1781858940.901764
+      "bytes": 8638,
+      "mtime": 1782455914.9695256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -138,7 +138,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1979,
-      "mtime": 1781858940.9057639
+      "mtime": 1782455914.9735255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -152,7 +152,7 @@
       "notes": [],
       "files": 1,
       "bytes": 3039,
-      "mtime": 1781858940.9057639
+      "mtime": 1782455914.9735255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -166,7 +166,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2651,
-      "mtime": 1781858940.9057639
+      "mtime": 1782455914.9775255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -180,7 +180,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1417,
-      "mtime": 1781858940.9097638
+      "mtime": 1782455914.9775255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -194,7 +194,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1022,
-      "mtime": 1781858940.9097638
+      "mtime": 1782455914.9775255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -208,7 +208,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1091,
-      "mtime": 1781858940.9097638
+      "mtime": 1782455914.9815257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -222,7 +222,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2433,
-      "mtime": 1781858940.9137638
+      "mtime": 1782455914.9895256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -236,7 +236,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1436,
-      "mtime": 1781858940.9137638
+      "mtime": 1782455914.9935255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -250,7 +250,7 @@
       "notes": [],
       "files": 1,
       "bytes": 4327,
-      "mtime": 1781858940.921764
+      "mtime": 1782455914.9935255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -264,7 +264,7 @@
       "notes": [],
       "files": 3,
       "bytes": 5681,
-      "mtime": 1781858941.097765
+      "mtime": 1782455915.2015262
     },
     {
       "root": "OpenClaw bundled skills",
@@ -278,7 +278,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2459,
-      "mtime": 1781858940.9257638
+      "mtime": 1782455915.0095255
     },
     {
       "root": "OpenClaw bundled skills",
@@ -292,7 +292,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1096,
-      "mtime": 1781858940.929764
+      "mtime": 1782455915.0135257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -306,7 +306,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1158,
-      "mtime": 1781858940.929764
+      "mtime": 1782455915.0135257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -319,8 +319,8 @@
       "issues": [],
       "notes": [],
       "files": 1,
-      "bytes": 6258,
-      "mtime": 1781858940.929764
+      "bytes": 6320,
+      "mtime": 1782455915.0135257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -334,7 +334,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2610,
-      "mtime": 1781858940.933764
+      "mtime": 1782455915.0135257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -348,7 +348,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2435,
-      "mtime": 1781858940.937764
+      "mtime": 1782455915.0175257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -362,7 +362,7 @@
       "notes": [],
       "files": 1,
       "bytes": 4574,
-      "mtime": 1781858940.937764
+      "mtime": 1782455915.0175257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -376,7 +376,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1473,
-      "mtime": 1781858940.937764
+      "mtime": 1782455915.0175257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -390,7 +390,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2537,
-      "mtime": 1781858940.941764
+      "mtime": 1782455915.0175257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -404,7 +404,7 @@
       "notes": [],
       "files": 3,
       "bytes": 9638,
-      "mtime": 1781858940.941764
+      "mtime": 1782455915.0215256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -418,7 +418,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2923,
-      "mtime": 1781858940.949764
+      "mtime": 1782455915.0215256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -432,7 +432,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1612,
-      "mtime": 1781858940.949764
+      "mtime": 1782455915.0215256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -446,7 +446,7 @@
       "notes": [],
       "files": 3,
       "bytes": 27848,
-      "mtime": 1781858941.4217665
+      "mtime": 1782455915.6055272
     },
     {
       "root": "OpenClaw bundled skills",
@@ -460,7 +460,7 @@
       "notes": [],
       "files": 4,
       "bytes": 15602,
-      "mtime": 1781858942.1017702
+      "mtime": 1782455916.0815284
     },
     {
       "root": "OpenClaw bundled skills",
@@ -474,7 +474,7 @@
       "notes": [],
       "files": 1,
       "bytes": 954,
-      "mtime": 1781858940.9537642
+      "mtime": 1782455915.0255256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -488,7 +488,7 @@
       "notes": [],
       "files": 1,
       "bytes": 4477,
-      "mtime": 1781858940.9577641
+      "mtime": 1782455915.0255256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -502,7 +502,7 @@
       "notes": [],
       "files": 1,
       "bytes": 3576,
-      "mtime": 1781858940.961764
+      "mtime": 1782455915.0295258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -516,7 +516,7 @@
       "notes": [],
       "files": 1,
       "bytes": 3867,
-      "mtime": 1781858940.961764
+      "mtime": 1782455915.0295258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -530,7 +530,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2942,
-      "mtime": 1781858940.965764
+      "mtime": 1782455915.0335257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -544,7 +544,7 @@
       "notes": [],
       "files": 1,
       "bytes": 914,
-      "mtime": 1781858940.965764
+      "mtime": 1782455915.0375257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -558,7 +558,7 @@
       "notes": [],
       "files": 2,
       "bytes": 5287,
-      "mtime": 1781858942.1177704
+      "mtime": 1782455916.1135285
     },
     {
       "root": "OpenClaw bundled skills",
@@ -572,7 +572,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2423,
-      "mtime": 1781858940.9697642
+      "mtime": 1782455915.0375257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -586,7 +586,7 @@
       "notes": [],
       "files": 1,
       "bytes": 4894,
-      "mtime": 1781858940.9697642
+      "mtime": 1782455915.0415256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -600,7 +600,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2391,
-      "mtime": 1781858940.9737642
+      "mtime": 1782455915.0415256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -613,8 +613,8 @@
       "issues": [],
       "notes": [],
       "files": 1,
-      "bytes": 6505,
-      "mtime": 1781858940.9737642
+      "bytes": 7078,
+      "mtime": 1782455915.0415256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -628,7 +628,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2552,
-      "mtime": 1781858940.9737642
+      "mtime": 1782455915.0455258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -642,7 +642,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2302,
-      "mtime": 1781858940.9777641
+      "mtime": 1782455915.0455258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -656,7 +656,7 @@
       "notes": [],
       "files": 1,
       "bytes": 4387,
-      "mtime": 1781858940.9777641
+      "mtime": 1782455915.0495257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -670,7 +670,7 @@
       "notes": [],
       "files": 2,
       "bytes": 8568,
-      "mtime": 1781858940.9817643
+      "mtime": 1782455915.0575256
     },
     {
       "root": "OpenClaw bundled skills",
@@ -682,9 +682,9 @@
       "heading": "Skill Creator",
       "issues": [],
       "notes": [],
-      "files": 7,
-      "bytes": 49229,
-      "mtime": 1781858949.9498122
+      "files": 8,
+      "bytes": 50617,
+      "mtime": 1782455924.213549
     },
     {
       "root": "OpenClaw bundled skills",
@@ -698,7 +698,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1677,
-      "mtime": 1781858940.9817643
+      "mtime": 1782455915.0615258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -712,7 +712,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1316,
-      "mtime": 1781858940.9857643
+      "mtime": 1782455915.0695257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -726,7 +726,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2457,
-      "mtime": 1781858940.9897642
+      "mtime": 1782455915.0735257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -740,7 +740,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1891,
-      "mtime": 1781858940.9897642
+      "mtime": 1782455915.0735257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -754,7 +754,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1688,
-      "mtime": 1781858940.9937644
+      "mtime": 1782455915.0895257
     },
     {
       "root": "OpenClaw bundled skills",
@@ -768,7 +768,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2125,
-      "mtime": 1781858940.9937644
+      "mtime": 1782455915.093526
     },
     {
       "root": "OpenClaw bundled skills",
@@ -782,7 +782,7 @@
       "notes": [],
       "files": 3,
       "bytes": 7385,
-      "mtime": 1781858940.9977643
+      "mtime": 1782455915.0975258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -796,7 +796,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2569,
-      "mtime": 1781858940.9937644
+      "mtime": 1782455915.093526
     },
     {
       "root": "OpenClaw bundled skills",
@@ -810,7 +810,7 @@
       "notes": [],
       "files": 1,
       "bytes": 3390,
-      "mtime": 1781858941.0017643
+      "mtime": 1782455915.0975258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -824,7 +824,7 @@
       "notes": [],
       "files": 3,
       "bytes": 7037,
-      "mtime": 1781858942.1177704
+      "mtime": 1782455916.1335285
     },
     {
       "root": "OpenClaw bundled skills",
@@ -837,8 +837,8 @@
       "issues": [],
       "notes": [],
       "files": 1,
-      "bytes": 2948,
-      "mtime": 1781858941.0057645
+      "bytes": 2956,
+      "mtime": 1782455915.1015258
     },
     {
       "root": "OpenClaw bundled skills",
@@ -852,7 +852,7 @@
       "notes": [],
       "files": 2,
       "bytes": 2306,
-      "mtime": 1781858942.1097703
+      "mtime": 1782455916.1015284
     },
     {
       "root": "OpenClaw bundled skills",
@@ -866,7 +866,7 @@
       "notes": [],
       "files": 1,
       "bytes": 1161,
-      "mtime": 1781858941.0097644
+      "mtime": 1782455915.105526
     },
     {
       "root": "OpenClaw bundled skills",
@@ -880,7 +880,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2370,
-      "mtime": 1781858941.0097644
+      "mtime": 1782455915.105526
     },
     {
       "root": "OpenClaw bundled skills",
@@ -894,7 +894,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2905,
-      "mtime": 1781858941.0257645
+      "mtime": 1782455915.105526
     },
     {
       "root": "OpenClaw bundled skills",
@@ -908,7 +908,7 @@
       "notes": [],
       "files": 1,
       "bytes": 2747,
-      "mtime": 1781858941.0297644
+      "mtime": 1782455915.109526
     },
     {
       "root": "Hermes skills",
@@ -954,9 +954,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 8,
-      "bytes": 72936,
-      "mtime": 1781889409.2759454
+      "files": 10,
+      "bytes": 79048,
+      "mtime": 1782438606.5541444
     },
     {
       "root": "Hermes skills",
@@ -1002,9 +1002,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 54,
-      "bytes": 275801,
-      "mtime": 1782406872.505492
+      "files": 63,
+      "bytes": 310783,
+      "mtime": 1782464525.2542531
     },
     {
       "root": "Hermes skills",

@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-26T15:00:50+00:00
+Updated: 2026-06-26T18:04:23+00:00
 
 ## Active Memories by Layer
 
@@ -13,6 +13,8 @@ Updated: 2026-06-26T15:00:50+00:00
 
 - **[fact/shared]** 端到端验证：Hermes 和 OpenClaw 现在通过 shared-agent-memory 服务共享长期记忆，服务端口 9400，导出文件挂载到双方工作区。
   - id: `0428af60-f9aa-4b39-a855-e524bdaa05b2`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `e2e, shared-memory`
+- **[fact/shared]** 每日开源学习 2026-06-26：本机长期关注目录包含 /opt/hermes-agent /opt/openclaw /opt/sub2api /opt/shared-agent-memory /opt/hermes-dashboard /opt/hermes-system-monitor /opt/server-observability-index；当前服务链路含 nginx、docker、ollama、shared-agent-memory、openclaw-gateway、hermes-gateway。
+  - id: `472719a3-e09e-4113-9d01-09de234fe658`; source: `hermes-cron`; importance: `6`; sensitivity: `shared`; tags: `learning, server, openclaw`
 - **[fact/shared]** 创建 cron 定时任务时，所有时间应以北京时间（UTC+8）为准，cron 表达式需转换为 UTC（BJT - 8h）。允许安排北京时间 00:00-07:00 的任务，按用户指定执行。所有任务输出使用中文。多任务流水线应清晰标注 BJT 和 UTC 双时区。
   - id: `a53ceef2-e12b-4fdc-9a45-0590583c1225`; source: `hermes`; importance: `6`; sensitivity: `shared`; tags: `hermes, core, imported`
 - **[fact/shared]** 服务器信息：公网 IP 38.55.146.137；系统监控在 `:9000`，Hermes Dashboard 在 `:9100`，Python venv 在 `/opt/hermes-agent/.venv/`。
@@ -63,6 +65,8 @@ Updated: 2026-06-26T15:00:50+00:00
   - id: `f63df781-1af1-461f-90a2-81938d70b525`; source: `openclaw`; importance: `95`; sensitivity: `shared`; tags: `cron, skills, hermes, openclaw, schedule`
 - **[decision/shared]** 用户在 2026-06-23 明确更正：服务器现在没有使用千问/qwen；所有关于 qwen2.5、千问、Ollama qwen、qwen-warm、qwen local-task/local-first 的旧记忆都应按历史配置/过去式理解，不代表当前运行状态。今后回答服务器模型路由或后台任务时，优先采用此当前状态：不再使用千问。
   - id: `54c31b65-b94e-4e65-af53-e81b785e5419`; source: `openclaw`; importance: `95`; sensitivity: `shared`; tags: `qwen, 千问, hermes, openclaw, routing`
+- **[decision/shared]** 每日开源学习 2026-06-26：LiteLLM 将 OpenAI-compatible 入口、虚拟 key、guardrails、spend tracking、路由聚合到统一网关；适合 Sub2API/APIUS 方向借鉴。报告路径：/root/daily-open-source-learning/2026-06-26/reports/03-backend-patterns.md
+  - id: `bd911a4e-75c6-47ce-a3e6-96f20c2e01f1`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, gateway, open-source`
 - **[decision/openclaw]** ---
 source_path: /root/.openclaw/workspace/AGENTS.md
 imported_at: 2026-06-19T13:19:45
@@ -145,6 +149,10 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-06-26：Langfuse 搜索栏采用 URL 为唯一真相、草稿态受控编辑器、不可表达条件显式诊断的模式；适合后续用于 Hermes Dashboard 的复杂筛选器与深链接设计。
+  - id: `7666ed13-1bdb-48de-b190-0fa36d5f3e87`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, ui, server`
+- **[success/shared]** 每日开源学习 2026-06-26：学习了 Grafana、Healthchecks、LiteLLM、Langfuse 的监控/网关/LLM 观测模式；关键结论是统一入口、单一真相、显式回滚、幂等可恢复；报告路径：/root/daily-open-source-learning/2026-06-26/reports/00-summary.md
+  - id: `81a28368-b5fb-4723-b01a-69614b93c6aa`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-26：完成 12 个开源项目学习，覆盖监控面板、LLM 网关、AI ChatOps、Web Dashboard UI、后端数据、性能安全运维。高价值结论：轻量监控优先只读 inventory 与小组件面板；LLM 网关分离兼容接口/路由/限流/观测；SSE/WebSocket 反代要关注 buffering、timeout、Upgrade；SQLite 单机优先 WAL/备份/短事务；任何部署新组件或改代码配置需用户确认。报告路径：/root/daily-open-source-learning/2026-06-26/reports/00-summary.md；完整目录：/root/daily-open-source-learning/2026-06-26
   - id: `557c4906-9210-40a6-ad60-2023d4566040`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-25：研究13个项目（LiteLLM/Open WebUI/Dify/Langfuse/AnythingLLM/LibreChat/One-API/New-API/Helicone/shadcn-ui/TanStack/bpftrace/fastapi-best-practices）。核心结论：(1) LLM Gateway 四件套=虚拟密钥+负载均衡+Fallback+限流；(2) LibreChat Resumable Streams 是 SSE 最佳实践；(3) Dify ssrf_proxy 容器隔离防 SSRF；(4) ClickHouse 适合 LLM 日志存储；(5) Langfuse @observe() 极简埋点。报告路径：/root/daily-open-source-learning/2026-06-25/reports/
@@ -155,6 +163,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `8f697c48-57c2-4300-9632-f223443ccba7`; source: `hermes`; importance: `7`; sensitivity: `shared`; tags: `openclaw, hermes, memory`
 - **[success/shared]** 每日开源学习 2026-06-24：研究 Beszel/Glance/Uptime Kuma/Homepage/LiteLLM/Portkey Gateway/Open WebUI。高价值结论：轻量监控可采用 Hub+Agent 或配置驱动 widget；LLM 网关应抽象认证、路由、fallback、预算、限流、审计；LLM 流式优先 SSE，双向控制再用 WebSocket；SQLite 适合轻量状态但需 WAL/备份/retention；Dashboard 优先做只读服务卡片、端口、systemd/docker、Nginx 摘要；P2 变更如限流、Nginx、Postgres、RBAC 需用户确认。报告路径：/root/daily-open-source-learning/2026-06-24
   - id: `370f4ca3-e215-459c-845b-d67fdea89f6e`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-06-26：Healthchecks 的 Period/Grace Time + HTTP/Email ping 模型很适合轻量 cron 告警；Grafana 的多数据源 Explore 和插件化适合作为统一观测入口参考。
+  - id: `d367374f-68f4-4417-b063-12eae9c6ce09`; source: `hermes-cron`; importance: `6`; sensitivity: `shared`; tags: `learning, observability, server`
 - **[success/openclaw]** Important paths: OpenClaw workspace `/root/.openclaw/workspace/`; Hermes memories `/root/.hermes/memories/`; Hermes dashboard `/opt/hermes-dashboard/`; monitor `/opt/hermes-system-monitor/`; vault `/root/obsidian-vault/`.
   - id: `62eb7e04-3287-411f-8062-6eb9db53eddf`; source: `openclaw`; importance: `5`; sensitivity: `shared`; tags: `event, imported, migration, openclaw`
 - **[success/openclaw]** Plans/docs created: `/root/obsidian-vault/plans/hermes-optimization-plan.md`, `/root/obsidian-vault/plans/obsidian-full-plan.md`; workspace also had `hermes-optimization-plan.md`, `knowledge-graph-plan.md`, `obsidian-full-plan.md`.
