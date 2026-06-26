@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-26T10:22:21+00:00
+Updated: 2026-06-26T15:00:50+00:00
 
 ## Active Memories by Layer
 
@@ -131,6 +131,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ### Success Patterns
 
+- **[success/shared]** 2026-06-26 完成 Atlas Control QQ 命令联动：新增 /排队记忆 /排队巡检，dispatch_qq_command 会创建 Atlas Collab qq-recall / qq-self-check job 并回传 job+preflight。Atlas Collab 兼容 qq-recall / qq-self-check kind。验证通过：/api/qq-commands 可见新命令；/排队记忆 OpenClaw 不回消息 与 /排队巡检 都已成功创建并完成，risk_level=warning，preflight.blocked=false，生产服务 active，nginx -t successful。
+  - id: `7ec5ebe4-1767-45be-9e2a-556406711e9d`; source: `openclaw`; importance: `86`; sensitivity: `shared`; tags: `atlas, qq-command, collab, queue, preflight`
 - **[success/shared]** 2026-06-26 完成 Atlas Collab queue worker 执行前 preflight：queue_jobs 新增 preflight_json/risk_level；执行前读取 Atlas Control /api/self-check 与 /api/recall-probe，risk_level=ok/warning/critical/skipped。critical 且无 payload.allow_critical=true 时默认阻止并把 job 标为 failed，result.preflight 保留证据；warning 继续执行并记录风险。新增 /api/queue/preflight?q=...；前端队列新增 Risk 列和 Preflight 面板。验证通过：真实 recall job risk=warning 正常完成；临时 mock critical=1 时 job failed/blocked=true；生产服务 active；nginx -t successful。
   - id: `d76e9ae0-3763-4209-99de-da7c19505df4`; source: `openclaw`; importance: `84`; sensitivity: `shared`; tags: `atlas, collab, queue, preflight, self-check, recall-probe`
 - **[success/shared]** 2026-06-26 完成 Atlas Provider Watch 告警节流：新增 alert_state 表、ALERT_COOLDOWN_SECONDS=1800、/api/alerts、ack、notify-mark、silence；/api/summary 输出 notification_due 和 alert_state。Atlas Control self-check findings 新增结构化 report-only remediation/actionability/scope，provider finding 透传 alert_state。验证通过：check-now/summary/alerts/ack/notify-mark/silence/self-check/nginx -t，10 个 Atlas 服务 online，critical=0，provider sub-zmjjkkk 可 silence 后 notification_due=false。
