@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-26T04:00:16+00:00
+Updated: 2026-06-26T10:22:21+00:00
 
 ## Active Memories by Layer
 
@@ -131,6 +131,16 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ### Success Patterns
 
+- **[success/shared]** 2026-06-26 完成 Atlas Collab queue worker 执行前 preflight：queue_jobs 新增 preflight_json/risk_level；执行前读取 Atlas Control /api/self-check 与 /api/recall-probe，risk_level=ok/warning/critical/skipped。critical 且无 payload.allow_critical=true 时默认阻止并把 job 标为 failed，result.preflight 保留证据；warning 继续执行并记录风险。新增 /api/queue/preflight?q=...；前端队列新增 Risk 列和 Preflight 面板。验证通过：真实 recall job risk=warning 正常完成；临时 mock critical=1 时 job failed/blocked=true；生产服务 active；nginx -t successful。
+  - id: `d76e9ae0-3763-4209-99de-da7c19505df4`; source: `openclaw`; importance: `84`; sensitivity: `shared`; tags: `atlas, collab, queue, preflight, self-check, recall-probe`
+- **[success/shared]** 2026-06-26 完成 Atlas Provider Watch 告警节流：新增 alert_state 表、ALERT_COOLDOWN_SECONDS=1800、/api/alerts、ack、notify-mark、silence；/api/summary 输出 notification_due 和 alert_state。Atlas Control self-check findings 新增结构化 report-only remediation/actionability/scope，provider finding 透传 alert_state。验证通过：check-now/summary/alerts/ack/notify-mark/silence/self-check/nginx -t，10 个 Atlas 服务 online，critical=0，provider sub-zmjjkkk 可 silence 后 notification_due=false。
+  - id: `85275518-9617-443b-bc28-f16ff74cd7d6`; source: `openclaw`; importance: `82`; sensitivity: `shared`; tags: `atlas, provider-watch, self-check, alert-throttle`
+- **[success/shared]** 2026-06-26 完成 Atlas Recall schema 标准化与脱敏增强：/api/recall=recall.v1，/api/context=recall.context.v1，/api/probe=recall.probe.v1，统一 items 字段并保留 memories/notes 兼容。Atlas Control 新增 /api/recall-probe、/api/qq-commands、POST /api/qq-command；self-check 接入 recall probe；QQ /服务器巡检 与 /查记忆 预览/执行可显示 memory/notes 命中。验证通过：recall/context/probe/self-check/qq-command/nginx -t，10 个 Atlas 服务 online，仅 provider sub-zmjjkkk 保留已知 warning。
+  - id: `529a75c1-8cf1-4b7f-b545-f05062509ef1`; source: `openclaw`; importance: `82`; sensitivity: `shared`; tags: `atlas, recall, qq-command, self-check`
+- **[success/shared]** 2026-06-26 完成 Provider Watch dry-run 通知预览：/api/notify-preview 返回 notification_due 和 messages，/api/notify-mark-due 默认需 confirm=true 才写 last_notified_at。Control 前端新增自检页和总览自检建议区，展示 remediation/actionability/command，命令只读不执行。验证通过：notify-preview、notify-mark-due 安全确认、alerts、self-check、页面指纹；10 个 Atlas 服务 online，critical=0。
+  - id: `6dfbf973-21ad-41a1-b618-5c00f2fe7ef2`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, provider-watch, control-ui, notification-preview, self-check`
+- **[success/shared]** 2026-06-26 修复 Atlas Recall shared-memory hybrid 召回偶发超时：默认 HTTP timeout 8s，memory timeout 12s，obsidian timeout 6s，并新增 /api/probe。验证 /api/probe、openclaw-no-reply 模板、/api/context、Atlas Control self-check、Atlas Collab recall job 全部成功，shared-memory + Obsidian 均命中且 errors=0。备份：/opt/atlas-recall/backups/main.py.pre-probe-timeout-20260626T093416Z。
+  - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
 - **[success/shared]** 每日开源学习 2026-06-26：完成 12 个开源项目学习，覆盖监控面板、LLM 网关、AI ChatOps、Web Dashboard UI、后端数据、性能安全运维。高价值结论：轻量监控优先只读 inventory 与小组件面板；LLM 网关分离兼容接口/路由/限流/观测；SSE/WebSocket 反代要关注 buffering、timeout、Upgrade；SQLite 单机优先 WAL/备份/短事务；任何部署新组件或改代码配置需用户确认。报告路径：/root/daily-open-source-learning/2026-06-26/reports/00-summary.md；完整目录：/root/daily-open-source-learning/2026-06-26
