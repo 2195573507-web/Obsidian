@@ -131,18 +131,3 @@ updated: 2026-06-24
 ### 5. 更新 MOC
 
 如果创建了重要的新文件或新目录，更新 `MOC.md` 添加链接。
-
-## Hermes/OpenClaw 记忆策略（2026-06-27）
-
-详见：[[plans/hermes-openclaw-memory-strategy|Hermes/OpenClaw 记忆策略]]
-
-执行摘要：
-
-- 记忆分层：短期会话、日记/episodic、共享 semantic、procedural skills、Obsidian/wiki。
-- 只写会影响未来行为的信息：偏好、决策、当前架构、重要服务状态、故障/修复、明确待办。
-- mutable facts（服务健康、端口、Provider 状态、配置）必须带 live-check 时间；旧状态按历史快照看。
-- 回答 prior work / decisions / preferences / todos 前必须查 memory/wiki；执行服务/配置任务前必须 live check。
-- shared-memory 写入必须显式 `kind/importance/sensitivity/tags/subject/content`，不依赖自动分类。
-- temporary/todo 完成或到期后标记完成/过期，不直接删除。
-- Hermes 自身 MEMORY.md 只保留工作记忆；长期共享事实沉淀到 shared-memory 或 Obsidian。
-- OpenClaw `memory/*.md` 主要作为日记/episodic；稳定知识进入 wiki/Obsidian。

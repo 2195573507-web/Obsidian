@@ -22,10 +22,10 @@ updated: 2026-06-24
 ## 技术栈与环境
 
 - 服务器：公网 IP `38.55.146.137`
-- 当前 Atlas Web 入口：`monitor.zmjjkkk.fun`、`agent.zmjjkkk.fun`、`notes.zmjjkkk.fun`、`server.zmjjkkk.fun`、`files.zmjjkkk.fun`、`daily.zmjjkkk.fun`、`collab.zmjjkkk.fun`
-- Hermes legacy/support：`hermes-system-monitor:9000`、`hermes-dashboard-web:9100`、`hermes-gateway.service`；这些不是当前主 Web 入口
-- OpenClaw Gateway：`127.0.0.1:18789`（仅作为状态事实；OpenClaw 侧记忆暂不改）
-- 共享记忆服务：`shared-agent-memory:9400`、`atlas-memory:19400`、`atlas-recall:19410`
+- 系统监控：`:9000`（system-monitor）
+- Hermes Dashboard：`:9100`
+- OpenClaw：`127.0.0.1:18789`
+- 共享记忆服务：`:9400`（/opt/shared-agent-memory）
 - 所有项目：FastAPI + 原生 HTML/JS/CSS，无现代前端框架
 - Docker 根目录：`/var/lib/docker`，数据盘 `/www` 可用于新服务
 
