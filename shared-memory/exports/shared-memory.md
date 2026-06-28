@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-28T15:00:30+00:00
+Updated: 2026-06-28T18:14:39+00:00
 
 ## Active Memories by Layer
 
@@ -165,6 +165,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-06-29：研究 Beszel、Glance、Uptime Kuma、Open WebUI、Langfuse、LiteLLM、Helicone、Coolify、Netdata、Grafana Alloy 共 10 个项目。高价值结论：1) LLM gateway 应策略化路由并标准化 trace 字段；2) 单机控制面适合 widget 化 Dashboard；3) 高风险动作继续 report-only/confirm/audit；4) 监控数据需 retention/downsampling；5) SSE/WebSocket 仅用于长任务日志/双向控制。报告路径：/root/daily-open-source-learning/2026-06-29/
+  - id: `fe51cdf7-b21c-4760-86ac-05b4cdfe8a17`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-28：研究 Beszel、Glance、LiteLLM、Open WebUI、Langfuse、Uptime Kuma、Homepage、Portainer 共 8 个项目。高价值结论：1) 服务器 Dashboard 宜采用 Homepage/Glance 式配置驱动服务卡片与 widget；2) 监控宜采用 Beszel/Uptime Kuma 式轻量采集、状态页、维护窗口和告警降噪；3) Sub2API/APIUS 可借鉴 LiteLLM 的 provider adapter、routing、fallback、rate limit、cost/audit logging；4) Hermes/OpenClaw Agent 链路可借鉴 Langfuse 增加 trace_id/span/latency/cost/fallback reason，但长期 memory 只保存结论不保存原始 trace；5) Portainer 的只读 inventory 与危险写操作 RBAC/白名单/confirm/audit 边界适合继续用于 Atlas Control。报告路径：/root/daily-open-source-learning/2026-06-28/reports/；盘点路径：/root/daily-open-source-learning/2026-06-28/server-inventory/。本次未修改业务代码/配置/服务。
   - id: `faccede2-3912-4047-b443-623f04b40859`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-26：Langfuse 搜索栏采用 URL 为唯一真相、草稿态受控编辑器、不可表达条件显式诊断的模式；适合后续用于 Hermes Dashboard 的复杂筛选器与深链接设计。

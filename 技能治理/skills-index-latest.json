@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-27T19:03:45.133227+00:00",
-  "date": "2026-06-28",
+  "generatedAt": "2026-06-28T19:02:14.308982+00:00",
+  "date": "2026-06-29",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -986,9 +986,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 9,
-      "bytes": 42686,
-      "mtime": 1782581252.9827273
+      "files": 10,
+      "bytes": 50388,
+      "mtime": 1782626961.947527
     },
     {
       "root": "Hermes skills",
