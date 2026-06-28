@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-27T18:09:29+00:00
+Updated: 2026-06-28T04:00:15+00:00
 
 ## Active Memories by Layer
 
@@ -202,7 +202,7 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 
 ## Noise Archive
 
-Noise entries are excluded from default context. Active noise entries: 1.
+Noise entries are excluded from default context. Active noise entries: 0.
 
 ## Recent Events
 
