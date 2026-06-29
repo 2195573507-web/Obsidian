@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-28T19:02:14.308982+00:00",
-  "date": "2026-06-29",
+  "generatedAt": "2026-06-29T19:03:37.904929+00:00",
+  "date": "2026-06-30",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -909,22 +909,6 @@
       "files": 1,
       "bytes": 2747,
       "mtime": 1782455915.109526
-    },
-    {
-      "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/.curator_backups",
-      "rel": ".curator_backups",
-      "has_skill_md": false,
-      "name": ".curator_backups",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 3,
-      "bytes": 509742,
-      "mtime": 1782383499.5948246
     },
     {
       "root": "Hermes skills",
