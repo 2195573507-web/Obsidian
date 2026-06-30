@@ -237,3 +237,63 @@
 
 - 对 OpenClaw reusable skill 的新增/结构性调整，建议走 `skill_workshop` 提案流程。
 - 对 Hermes skills 的合并、删除、禁用，建议先人工确认；本任务默认不做破坏性操作。
+
+---
+
+## 04:00 UTC Hermes 服务器 skills 保守整理补充
+
+
+- 生成时间：2026-06-30T04:03:27.871682+00:00
+- 策略：稳定、保守、可恢复；仅隔离空目录或顶层明显缓存/构建/临时残留；不删除。
+
+## 整理前/后数量
+- `/root/.hermes/skills`：存在=True；顶层目录 20 → 20；SKILL.md 52 → 52
+- `/opt/hermes-agent/skills`：存在=True；顶层目录 17 → 17；SKILL.md 73 → 73
+
+## 隔离项
+- 无。本轮没有发现可安全隔离的空目录、顶层缓存/构建/临时残留。
+
+## 保留原因
+- `/root/.hermes/skills/software-development/test-driven-development`：名称含 test，但有 SKILL.md，属于官方/核心测试驱动开发技能，保留
+- `/opt/hermes-agent/skills/software-development/test-driven-development`：名称含 test，但有 SKILL.md，属于官方/核心测试驱动开发技能，保留
+- `/opt/hermes-agent/skills` 下的官方/核心分类目录保留。
+- `/root/.hermes/skills` 下包含新增引用/用户层技能的分类目录保留。
+
+## 最近新增/变动（近 7 天顶层目录）
+### `/root/.hermes/skills`
+- `autonomous-ai-agents` mtime=2026-06-26T01:49:38.634128+00:00 SKILL.md=2
+- `data-science` mtime=2026-06-27T17:15:47.927238+00:00 SKILL.md=4
+- `devops` mtime=2026-06-24T17:36:16.092522+00:00 SKILL.md=11
+- `github` mtime=2026-06-24T17:37:25.068759+00:00 SKILL.md=7
+- `intelligence-cron-pipeline` mtime=2026-06-24T09:53:26.050563+00:00 SKILL.md=1
+- `research` mtime=2026-06-24T15:07:33.825486+00:00 SKILL.md=5
+- `shared-agent-memory` mtime=2026-06-25T00:50:11.554964+00:00 SKILL.md=1
+- `software-development` mtime=2026-06-24T12:50:13.995295+00:00 SKILL.md=12
+### `/opt/hermes-agent/skills`
+- 无顶层目录近 7 天变动。
+
+## 待确认风险项
+- `/root/.hermes/skills/apple 与 /opt/hermes-agent/skills/apple`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/autonomous-ai-agents 与 /opt/hermes-agent/skills/autonomous-ai-agents`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/creative 与 /opt/hermes-agent/skills/creative`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/data-science 与 /opt/hermes-agent/skills/data-science`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/devops 与 /opt/hermes-agent/skills/devops`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/dogfood 与 /opt/hermes-agent/skills/dogfood`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/email 与 /opt/hermes-agent/skills/email`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/github 与 /opt/hermes-agent/skills/github`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/media 与 /opt/hermes-agent/skills/media`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/mlops 与 /opt/hermes-agent/skills/mlops`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/note-taking 与 /opt/hermes-agent/skills/note-taking`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/productivity 与 /opt/hermes-agent/skills/productivity`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/research 与 /opt/hermes-agent/skills/research`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/smart-home 与 /opt/hermes-agent/skills/smart-home`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/social-media 与 /opt/hermes-agent/skills/social-media`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/software-development 与 /opt/hermes-agent/skills/software-development`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+- `/root/.hermes/skills/yuanbao 与 /opt/hermes-agent/skills/yuanbao`：顶层分类同名；可能是用户层覆盖/同步，不按重复删除
+
+## 错误/降级
+- 无。
+
+## 后续建议
+- 继续每日保守整理；只有确认是残留/测试/空目录才隔离。
+- 对顶层同名分类不要自动判定为重复，应结合 Hermes 加载路径和用户层覆盖策略确认。
