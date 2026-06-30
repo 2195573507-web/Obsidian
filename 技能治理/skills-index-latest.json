@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-29T19:03:37.904929+00:00",
-  "date": "2026-06-30",
+  "generatedAt": "2026-06-30T19:03:48.712313+00:00",
+  "date": "2026-07-01",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -954,9 +954,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 57,
-      "bytes": 150055,
-      "mtime": 1781774469.481908
+      "files": 66,
+      "bytes": 193956,
+      "mtime": 1782840319.7582443
     },
     {
       "root": "Hermes skills",
@@ -986,9 +986,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 72,
-      "bytes": 347843,
-      "mtime": 1782582176.9911146
+      "files": 74,
+      "bytes": 357012,
+      "mtime": 1782837729.136146
     },
     {
       "root": "Hermes skills",
@@ -1112,9 +1112,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 4,
-      "bytes": 15365,
-      "mtime": 1781878807.5116374
+      "files": 10,
+      "bytes": 36342,
+      "mtime": 1782810919.3520553
     },
     {
       "root": "Hermes skills",
@@ -1206,9 +1206,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 47,
-      "bytes": 254193,
-      "mtime": 1782540582.2917068
+      "files": 53,
+      "bytes": 273696,
+      "mtime": 1782833587.9850233
     },
     {
       "root": "Hermes skills",

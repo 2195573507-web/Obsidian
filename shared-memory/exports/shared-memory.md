@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-06-30T15:01:05+00:00
+Updated: 2026-06-30T18:17:40+00:00
 
 ## Active Memories by Layer
 
@@ -165,6 +165,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-07-01：完成 12 个开源项目学习，覆盖 Grafana/Netdata/Uptime Kuma/Beszel/Glance/Portainer/Coolify/Open WebUI/Langfuse/LiteLLM/Helicone/new-api。高价值结论：监控项目优先学习低开销 agent+hub 与配置驱动 dashboard；LLM 网关优先抽象 provider adapter、fallback/budget、SSE stream relay、trace/cost/audit；Dashboard 图表需 downsampling 与脱敏；服务操作类能力必须任务化、审计并人工确认。报告路径：/root/daily-open-source-learning/2026-07-01
+  - id: `12c5eddf-7190-4b0f-b467-ffeee2799799`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-30：学习 12 个项目（Grafana、Uptime Kuma、Beszel、Glance、Open WebUI、Langfuse、LiteLLM、Helicone、shadcn/ui、TanStack Query、FastAPI、Prometheus）。高价值结论：监控面板优先可解释状态；LLM 网关核心是 adapter/streaming/fallback/rate-limit/audit；Dashboard 前端适合 server-state 缓存；SQLite 单机场景需 WAL/索引/备份/retention；自动维护任务应默认报告化而非自动改配置。报告路径：/root/daily-open-source-learning/2026-06-30/
   - id: `d74062d8-75f9-45c2-b4c6-5918aade42db`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-06-29：研究 Beszel、Glance、Uptime Kuma、Open WebUI、Langfuse、LiteLLM、Helicone、Coolify、Netdata、Grafana Alloy 共 10 个项目。高价值结论：1) LLM gateway 应策略化路由并标准化 trace 字段；2) 单机控制面适合 widget 化 Dashboard；3) 高风险动作继续 report-only/confirm/audit；4) 监控数据需 retention/downsampling；5) SSE/WebSocket 仅用于长任务日志/双向控制。报告路径：/root/daily-open-source-learning/2026-06-29/
