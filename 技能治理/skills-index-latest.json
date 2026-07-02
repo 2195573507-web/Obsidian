@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-01T19:00:08.968320+00:00",
-  "date": "2026-07-02",
+  "generatedAt": "2026-07-02T19:03:57.908746+00:00",
+  "date": "2026-07-03",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -912,19 +912,19 @@
     },
     {
       "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/apple",
-      "rel": "apple",
+      "dir": "/root/.hermes/skills/.curator_backups",
+      "rel": ".curator_backups",
       "has_skill_md": false,
-      "name": "apple",
+      "name": ".curator_backups",
       "description": "",
       "heading": "",
       "issues": [
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 1,
-      "bytes": 137,
-      "mtime": 1781774469.4579105
+      "files": 3,
+      "bytes": 982636,
+      "mtime": 1782988421.4336357
     },
     {
       "root": "Hermes skills",
@@ -954,9 +954,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 66,
-      "bytes": 204976,
-      "mtime": 1782912021.5314233
+      "files": 80,
+      "bytes": 285004,
+      "mtime": 1782994840.631792
     },
     {
       "root": "Hermes skills",
@@ -986,9 +986,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 74,
-      "bytes": 358318,
-      "mtime": 1782921994.695128
+      "files": 77,
+      "bytes": 367912,
+      "mtime": 1782994934.8038874
     },
     {
       "root": "Hermes skills",
@@ -1003,22 +1003,6 @@
       "files": 3,
       "bytes": 12345,
       "mtime": 1782144479.2436814
-    },
-    {
-      "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/email",
-      "rel": "email",
-      "has_skill_md": false,
-      "name": "email",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 1,
-      "bytes": 101,
-      "mtime": 1781774469.5099053
     },
     {
       "root": "Hermes skills",
@@ -1086,22 +1070,6 @@
     },
     {
       "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/mlops",
-      "rel": "mlops",
-      "has_skill_md": false,
-      "name": "mlops",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 4,
-      "bytes": 702,
-      "mtime": 1781774469.5219042
-    },
-    {
-      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/note-taking",
       "rel": "note-taking",
       "has_skill_md": false,
@@ -1115,22 +1083,6 @@
       "files": 10,
       "bytes": 36342,
       "mtime": 1782810919.3520553
-    },
-    {
-      "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/productivity",
-      "rel": "productivity",
-      "has_skill_md": false,
-      "name": "productivity",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 2,
-      "bytes": 261,
-      "mtime": 1781774469.525904
     },
     {
       "root": "Hermes skills",
@@ -1164,38 +1116,6 @@
     },
     {
       "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/smart-home",
-      "rel": "smart-home",
-      "has_skill_md": false,
-      "name": "smart-home",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 1,
-      "bytes": 123,
-      "mtime": 1781774469.8018773
-    },
-    {
-      "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/social-media",
-      "rel": "social-media",
-      "has_skill_md": false,
-      "name": "social-media",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 1,
-      "bytes": 151,
-      "mtime": 1781774469.8018773
-    },
-    {
-      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/software-development",
       "rel": "software-development",
       "has_skill_md": false,
@@ -1206,9 +1126,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 53,
-      "bytes": 273696,
-      "mtime": 1782833587.9850233
+      "files": 55,
+      "bytes": 284004,
+      "mtime": 1782997975.2276423
     },
     {
       "root": "Hermes skills",
