@@ -118,3 +118,10 @@ https://server.zmjjkkk.fun/agents
 第一版 Agent 协作平台已经可用，适合作为 Hermes 和 OpenClaw 的共享任务房间。
 
 下一步重点不是 UI，而是接入两个 Agent 的实际消息发送链路。
+
+---
+
+## 关联入口
+
+- [[plans/index|计划总览]]
+- [[MOC|知识库导航]]

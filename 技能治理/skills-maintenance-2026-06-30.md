@@ -1,3 +1,12 @@
+---
+title: "skills-maintenance-2026-06-30"
+type: note
+category: "技能治理"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [vault, 技能治理]
+---
+
 # OpenClaw / Hermes Skills 整理报告 — 2026-06-30
 
 - 生成时间：2026-06-30T03:03:37+08:00 / 2026-06-29T19:03:37+00:00
@@ -297,3 +306,10 @@
 ## 后续建议
 - 继续每日保守整理；只有确认是残留/测试/空目录才隔离。
 - 对顶层同名分类不要自动判定为重复，应结合 Hermes 加载路径和用户层覆盖策略确认。
+
+---
+
+## 关联入口
+
+- [[技能治理/skills-index-latest|Skills 索引]]
+- [[MOC|知识库导航]]

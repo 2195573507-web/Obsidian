@@ -243,3 +243,10 @@ updated: 2026-06-24
 
 - 对 OpenClaw reusable skill 的新增/结构性调整，建议走 `skill_workshop` 提案流程。
 - 对 Hermes skills 的合并、删除、禁用，建议先人工确认；本任务默认不做破坏性操作。
+
+---
+
+## 关联入口
+
+- [[技能治理/skills-index-latest|Skills 索引]]
+- [[MOC|知识库导航]]

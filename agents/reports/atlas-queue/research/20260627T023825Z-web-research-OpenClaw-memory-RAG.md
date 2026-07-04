@@ -12,3 +12,10 @@ mode: read-only
 ## Search Results
 
 ## Fetched Snippets
+
+---
+
+## 关联入口
+
+- [[agents/index|Agent 总览]]
+- [[MOC|知识库导航]]

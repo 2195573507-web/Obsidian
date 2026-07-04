@@ -181,3 +181,10 @@ FROM "agents" OR "memory"
 WHERE !completed
 GROUP BY file.link
 ```
+
+---
+
+## 关联入口
+
+- [[MOC|知识库导航]]
+- [[MOC|知识库导航]]

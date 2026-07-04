@@ -1,3 +1,12 @@
+---
+title: "MEMORY"
+type: note
+category: "agents"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [vault, agents]
+---
+
 # OpenClaw Working Memory
 
 > 上限 50 条 | 超限由 Agent 主动压缩合并
@@ -22,3 +31,10 @@
 ## 待办/进行中的事
 - [todo] 维持 OpenClaw 工作记忆和学习目录的可检索性，定期补充经验卡、失败库和成功模式 (updated: 2026-06-27)
 - [todo] 当记忆超过上限时，先合并相似条目或移除过时条目，再考虑归档 (updated: 2026-06-27)
+
+---
+
+## 关联入口
+
+- [[agents/index|Agent 总览]]
+- [[MOC|知识库导航]]

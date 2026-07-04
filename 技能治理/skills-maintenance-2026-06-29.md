@@ -1,3 +1,12 @@
+---
+title: "skills-maintenance-2026-06-29"
+type: note
+category: "技能治理"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [vault, 技能治理]
+---
+
 # OpenClaw / Hermes Skills 整理报告 — 2026-06-29
 
 - 生成时间：2026-06-29T03:02:14+08:00 / 2026-06-28T19:02:14+00:00
@@ -241,3 +250,10 @@
 
 - 对 OpenClaw reusable skill 的新增/结构性调整，建议走 `skill_workshop` 提案流程。
 - 对 Hermes skills 的合并、删除、禁用，建议先人工确认；本任务默认不做破坏性操作。
+
+---
+
+## 关联入口
+
+- [[技能治理/skills-index-latest|Skills 索引]]
+- [[MOC|知识库导航]]

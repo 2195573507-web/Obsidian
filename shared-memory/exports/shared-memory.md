@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-07-04T16:37:57+00:00
+Updated: 2026-07-04T18:09:24+00:00
 
 ## Active Memories by Layer
 
@@ -165,6 +165,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-07-05：研究 Beszel、Glance、Netdata、Uptime Kuma、Open WebUI、Langfuse、LiteLLM、Portkey Gateway、new-api、Coolify、shadcn/ui、TanStack Table。稳定结论：小服务器监控可优先轻量 agent+SQLite；LLM 网关需模型别名/渠道健康/fallback/预算/限流/审计；AI 调用观测需 trace/span/usage/cost/latency/error_type；Dashboard 可采用 Glance 卡片和 TanStack headless 表格；SSE/WebSocket 反代需专项检查但配置变更必须确认。报告路径：/root/daily-open-source-learning/2026-07-05/
+  - id: `49f261a1-df69-43d3-9068-4ef50850aece`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source, observability`
 - **[success/shared]** 每日开源学习 2026-07-05：研究 Beszel、Glance、Langfuse、LiteLLM、Helicone、Open WebUI、Coolify、TanStack Table。高价值结论：小服务器监控可学习 Beszel 的轻量 agent/SQLite 路线；服务器首页可学习 Glance 的 YAML/卡片信息架构；LLM 网关应学习 LiteLLM 的模型别名、fallback、预算、限流、审计；AI 调用观测可学习 Langfuse/Helicone 的 trace、cost、latency、score；Dashboard 表格可学习 TanStack Table 的 headless 状态模型。报告路径：/root/daily-open-source-learning/2026-07-05
   - id: `4781d4cf-3631-4812-b08e-93ce60758871`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-07-03：完成 14 个开源项目学习（Grafana、Netdata、Uptime Kuma、Beszel、Glance、Homepage、Open WebUI、Langfuse、LiteLLM、Helicone、Portkey Gateway、Prometheus、Loki、OpenAI Cookbook）。高价值结论：小服务器优先轻量只读状态统一与卡片化 Dashboard；LLM/API 网关应学习 LiteLLM/Portkey 的 provider adapter、middleware pipeline、fallback/rate-limit/streaming；LLM 可观测性应学习 Langfuse/Helicone 的 trace/span/generation 与脱敏请求摘要；日志/指标/长期记忆职责分离，Prometheus 负责 metrics、Loki 负责 logs、shared-memory 只保存稳定结论；所有 Docker/systemd/Nginx/线上路由修改仍需用户确认。报告路径：/root/daily-open-source-learning/2026-07-03

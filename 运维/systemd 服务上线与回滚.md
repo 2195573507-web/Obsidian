@@ -1,0 +1,34 @@
+---
+title: "systemd 服务上线与回滚"
+type: wiki
+category: "运维"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [systemd, deploy]
+---
+
+# systemd 服务上线与回滚
+
+> 全量扩写知识页。上级入口：[[运维/运维 MOC|运维 MOC]]、[[MOC|知识库导航]]。
+
+上线 systemd 服务时要记录 unit 路径、ExecStart、WorkingDirectory、环境变量、端口和日志位置。变更后执行 daemon-reload、restart、status、journalctl、health 验证。
+
+## 标准执行模板
+
+1. 明确目标、范围和不做事项。
+2. 收集当前证据：文件、服务、日志、配置、健康接口或历史报告。
+3. 给出最小可执行方案，并保留回滚路径。
+4. 执行后验证：读回文件、运行测试、访问接口或检查 Git diff。
+5. 将稳定经验沉淀到知识库，临时状态写入报告而不是长期记忆。
+
+## 检查清单
+
+- 是否有 frontmatter、更新时间和分类。
+- 是否至少链接一个上级 MOC。
+- 是否区分稳定事实与实时状态。
+- 是否避免泄露密钥、token、隐私和内部未授权信息。
+
+## 关联入口
+
+- [[运维/运维 MOC|运维 MOC]]
+- [[MOC|知识库导航]]

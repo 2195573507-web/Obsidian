@@ -206,3 +206,10 @@ Report:
 - Any validation skipped and the concrete reason.
 - Optional follow-up work, clearly separated from required fixes.
 ```
+
+---
+
+## 关联入口
+
+- [[plans/index|计划总览]]
+- [[MOC|知识库导航]]

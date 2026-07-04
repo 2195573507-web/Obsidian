@@ -64,3 +64,10 @@ updated: 2026-06-24
 - 新功能原生集成到现有 UI，不做独立页面
 - 手机端不拥挤，按钮操作有明确成功/失败反馈
 - Dashboard 优先做只读服务卡片、端口、systemd/docker、Nginx 摘要
+
+---
+
+## 关联入口
+
+- [[agents/index|Agent 总览]]
+- [[MOC|知识库导航]]

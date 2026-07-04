@@ -1,3 +1,12 @@
+---
+title: "2026-07-05-Hermes每周skills记忆趋势"
+type: note
+category: "shared-memory"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [vault, shared-memory]
+---
+
 # Hermes 每周 skills/记忆增长趋势报告（2026-07-05）
 
 > 运行日期：2026-07-05（北京时间，来自 `TZ=Asia/Shanghai date +%F`）  
@@ -183,3 +192,10 @@
 3. 继续观察 memories 与 embeddings 差值；目前差值稳定为 3，暂不需要干预。
 4. local_tasks 的 `escalate/fallback` 虽未新增，但占比长期偏高，建议后续单独做只读诊断报告，重点看 `summary` 与 `compaction-summary` 的路由/模型可用性。
 5. 不恢复旧 BJT 03:00-05:00 自动学习任务，不修改 Hermes/OpenClaw 主模型配置。
+
+---
+
+## 关联入口
+
+- [[shared-memory/README|共享记忆说明]]
+- [[MOC|知识库导航]]

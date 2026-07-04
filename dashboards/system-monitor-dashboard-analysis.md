@@ -10,3 +10,10 @@ category: dashboards
 > 对比基准：当前系统监控面板 (port 9000)
 
 ---
+
+---
+
+## 关联入口
+
+- [[dashboards/index|Dashboard 总览]]
+- [[MOC|知识库导航]]

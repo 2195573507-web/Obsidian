@@ -37,3 +37,10 @@ shared-memory-client export
 - 重要事实、偏好、服务器结构、项目状态、跨 Agent 决策写入共享记忆。
 - 临时任务进度、一次性日志、密钥/token 不写入共享记忆。
 - 回答前可用 `shared-memory-client context '<task>'` 拉取相关上下文。
+
+---
+
+## 关联入口
+
+- [[shared-memory/README|共享记忆说明]]
+- [[MOC|知识库导航]]

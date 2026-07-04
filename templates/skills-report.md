@@ -65,4 +65,11 @@ deprecated_skills:
 
 ## 建议
 
-- 
+-
+
+---
+
+## 关联入口
+
+- [[README|知识库 README]]
+- [[MOC|知识库导航]]

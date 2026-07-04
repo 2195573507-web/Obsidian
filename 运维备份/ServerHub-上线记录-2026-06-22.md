@@ -36,3 +36,10 @@ systemctl start server-home.service
 - 原 `/opt/server-home`
 - 原 systemd 单元与 Nginx 全量导出
 - 当前端口和服务清单
+
+---
+
+## 关联入口
+
+- [[运维/运维 MOC|运维 MOC]]
+- [[MOC|知识库导航]]

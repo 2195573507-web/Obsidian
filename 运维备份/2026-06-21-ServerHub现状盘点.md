@@ -73,3 +73,10 @@ systemctl restart server-home.service
 3. 新增 `hub.zmjjkkk.fun` server block，保留 `server.zmjjkkk.fun` 回滚入口。
 4. 将 `/api/state` 拆成更明确的只读 ServerHub API：health、services、metrics、tasks、backups、security。
 5. 为前端补浏览器截图验收和移动端检查。
+
+---
+
+## 关联入口
+
+- [[运维/运维 MOC|运维 MOC]]
+- [[MOC|知识库导航]]

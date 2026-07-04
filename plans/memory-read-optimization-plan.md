@@ -77,3 +77,10 @@ shared-memory-client search "用户偏好" --limit 5 --kinds preference,fact,dec
 shared-memory-client expire
 shared-memory-client export
 ```
+
+---
+
+## 关联入口
+
+- [[plans/index|计划总览]]
+- [[MOC|知识库导航]]

@@ -1,3 +1,12 @@
+---
+title: "2026-06-27-Hermes每周skills记忆趋势"
+type: note
+category: "shared-memory"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [vault, shared-memory]
+---
+
 # Hermes 每周 skills/记忆增长趋势报告（2026-06-27）
 
 > 运行日期：2026-06-27（北京时间，`TZ=Asia/Shanghai date +%F`）  
@@ -121,3 +130,10 @@ Health 返回：`ok=true`，版本 `1.3.0`，数据库 `/opt/shared-agent-memory
 3. 重点观察 `local_tasks` 中 `escalate/fallback` 是否持续增加，尤其是 `compaction-summary` 与 `summary` 类任务。
 4. 观察 memories 与 embeddings 差值是否扩大；若差值持续上升，再检查 embedding worker 或写入流程。
 5. 观察 `/root/.hermes/skills` 中新增目录是否为主动安装或任务产生，避免误判为异常增长。
+
+---
+
+## 关联入口
+
+- [[shared-memory/README|共享记忆说明]]
+- [[MOC|知识库导航]]

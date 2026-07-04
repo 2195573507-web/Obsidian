@@ -51,3 +51,10 @@ manual endpoint verification
 - `2026-06-26T01:53:29Z` job queued
 - `2026-06-26T01:53:29Z` job started
 - `2026-06-26T01:53:29Z` job done
+
+---
+
+## 关联入口
+
+- [[agents/index|Agent 总览]]
+- [[MOC|知识库导航]]

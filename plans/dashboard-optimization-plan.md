@@ -131,3 +131,10 @@ db.insert(m)
 assert 'read_rate_mbps' in db.get_latest()['disk']
 assert 'disk_read' in db.get_history('1h')
 ```
+
+---
+
+## 关联入口
+
+- [[plans/index|计划总览]]
+- [[MOC|知识库导航]]

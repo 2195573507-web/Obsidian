@@ -1,17 +1,25 @@
 ---
-title: 产品 MOC
-type: wiki
-category: product
-updated: 2026-06-30
-tags: [product, moc]
-source: hermes-multi-agent-broad-expansion-wave3
+title: "产品 MOC"
+type: moc
+category: "产品"
+updated: 2026-07-05
+managed_by: Hermes
+tags: [moc, index]
 ---
 
 # 产品 MOC
 
-> 关联：[[MOC|知识库导航]]
+> 自动重建领域导航。返回 [[MOC|知识库导航]]、[[_meta/00-vault-dashboard|知识库总控台]]。
 
+## 笔记列表
+
+- [[产品/AI Agent 产品设计手册|AI Agent 产品设计手册]]
+- [[产品/AI 功能风险提示与人工接管|AI 功能风险提示与人工接管]]
 - [[产品/PRD 写作模板|PRD 写作模板]]
+- [[产品/产品需求评审清单|产品需求评审清单]]
+- [[产品/后台管理信息架构|后台管理信息架构]]
 - [[产品/用户故事与验收标准|用户故事与验收标准]]
-- [[软件工程/后台管理系统设计|后台管理系统设计]]
-- [[AI/产品/AI Agent 产品设计模式|AI Agent 产品设计模式]]
+
+## 2026-07-05 扩容新增
+
+- [[产品/Agent 产品失败兜底体验|Agent 产品失败兜底体验]]
