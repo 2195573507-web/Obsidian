@@ -38,3 +38,10 @@ tags: [vault, agents]
 
 - [[agents/index|Agent 总览]]
 - [[MOC|知识库导航]]
+
+## 会话压缩摘要
+
+- [summary/shared] 压缩 `2026-06-19.md`：关键决策0条，完成工作2条，问题0条，待跟进0条；高价值摘要：Recent web-health task: checked `:9000`, `:9100`, `:9200`; all services/APIs healthy. Dashboard CSS bug `--btn-hover` undefined was fixed. Token/cost trend API issue was a test-key mistake; data was normal.；详见 [[记忆治理/openclaw-session-memory-compact-20260705T030002Z|压缩报告]]。(updated: 2026-07-05) <!-- compact:2026-06-19.md:ff28c4bc65beeb27 -->
+- [summary/shared] 压缩 `2026-06-20.md`：关键决策0条，完成工作2条，问题2条，待跟进1条；高价值摘要：Next continuation should run `systemctl daemon-reload && systemctl enable --now ollama`, verify `curl http://127.0.0.1:11434/api/tags`, then `ollama pull nomic-embed-text`, test `/api/embeddings`, configure OpenClaw embedding provider, rebuild memory index, an；详见 [[记忆治理/openclaw-session-memory-compact-20260705T030002Z|压缩报告]]。(updated: 2026-07-05) <!-- compact:2026-06-20.md:e9eee5438dca8c69 -->
+- [summary/shared] 压缩 `2026-06-21.md`：关键决策0条，完成工作3条，问题0条，待跟进0条；高价值摘要：User reported Hermes/OpenClaw config UI available-model display was wrong. Fixed Hermes Dashboard backend/frontend in `/opt/hermes-dashboard`.；详见 [[记忆治理/openclaw-session-memory-compact-20260705T030002Z|压缩报告]]。(updated: 2026-07-05) <!-- compact:2026-06-21.md:f87aebbe825b9393 -->
+
