@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-05T19:00:36.997095+00:00",
-  "date": "2026-07-06",
+  "generatedAt": "2026-07-06T19:04:51.523442+00:00",
+  "date": "2026-07-07",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -928,6 +928,22 @@
     },
     {
       "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/apple",
+      "rel": "apple",
+      "has_skill_md": false,
+      "name": "apple",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 1,
+      "bytes": 137,
+      "mtime": 1781774469.4579105
+    },
+    {
+      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/autonomous-ai-agents",
       "rel": "autonomous-ai-agents",
       "has_skill_md": false,
@@ -986,9 +1002,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 78,
-      "bytes": 373033,
-      "mtime": 1783265575.1967013
+      "files": 82,
+      "bytes": 389624,
+      "mtime": 1783337241.8037982
     },
     {
       "root": "Hermes skills",
@@ -1003,6 +1019,22 @@
       "files": 3,
       "bytes": 12345,
       "mtime": 1782144479.2436814
+    },
+    {
+      "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/email",
+      "rel": "email",
+      "has_skill_md": false,
+      "name": "email",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 1,
+      "bytes": 101,
+      "mtime": 1781774469.5099053
     },
     {
       "root": "Hermes skills",
@@ -1070,6 +1102,22 @@
     },
     {
       "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/mlops",
+      "rel": "mlops",
+      "has_skill_md": false,
+      "name": "mlops",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 4,
+      "bytes": 702,
+      "mtime": 1781774469.5219042
+    },
+    {
+      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/note-taking",
       "rel": "note-taking",
       "has_skill_md": false,
@@ -1083,6 +1131,22 @@
       "files": 13,
       "bytes": 48037,
       "mtime": 1783220331.2658207
+    },
+    {
+      "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/productivity",
+      "rel": "productivity",
+      "has_skill_md": false,
+      "name": "productivity",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 2,
+      "bytes": 261,
+      "mtime": 1781774469.525904
     },
     {
       "root": "Hermes skills",
@@ -1116,6 +1180,38 @@
     },
     {
       "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/smart-home",
+      "rel": "smart-home",
+      "has_skill_md": false,
+      "name": "smart-home",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 1,
+      "bytes": 123,
+      "mtime": 1781774469.8018773
+    },
+    {
+      "root": "Hermes skills",
+      "dir": "/root/.hermes/skills/social-media",
+      "rel": "social-media",
+      "has_skill_md": false,
+      "name": "social-media",
+      "description": "",
+      "heading": "",
+      "issues": [
+        "missing SKILL.md"
+      ],
+      "notes": [],
+      "files": 1,
+      "bytes": 151,
+      "mtime": 1781774469.8018773
+    },
+    {
+      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/software-development",
       "rel": "software-development",
       "has_skill_md": false,
@@ -1127,8 +1223,8 @@
       ],
       "notes": [],
       "files": 57,
-      "bytes": 291290,
-      "mtime": 1783185867.914943
+      "bytes": 292065,
+      "mtime": 1783339066.211787
     },
     {
       "root": "Hermes skills",
