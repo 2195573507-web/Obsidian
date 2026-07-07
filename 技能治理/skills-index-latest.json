@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-06T19:04:51.523442+00:00",
-  "date": "2026-07-07",
+  "generatedAt": "2026-07-07T19:04:38.049679+00:00",
+  "date": "2026-07-08",
   "roots": [
     {
       "label": "OpenClaw plugin skills",
@@ -912,22 +912,6 @@
     },
     {
       "root": "Hermes skills",
-      "dir": "/root/.hermes/skills/.curator_backups",
-      "rel": ".curator_backups",
-      "has_skill_md": false,
-      "name": ".curator_backups",
-      "description": "",
-      "heading": "",
-      "issues": [
-        "missing SKILL.md"
-      ],
-      "notes": [],
-      "files": 3,
-      "bytes": 982636,
-      "mtime": 1782988421.4336357
-    },
-    {
-      "root": "Hermes skills",
       "dir": "/root/.hermes/skills/apple",
       "rel": "apple",
       "has_skill_md": false,
@@ -1048,9 +1032,9 @@
         "missing SKILL.md"
       ],
       "notes": [],
-      "files": 17,
-      "bytes": 87396,
-      "mtime": 1782322645.0687592
+      "files": 18,
+      "bytes": 90272,
+      "mtime": 1783415336.5313046
     },
     {
       "root": "Hermes skills",
