@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-07-08T15:01:18+00:00
+Updated: 2026-07-08T18:05:13+00:00
 
 ## Active Memories by Layer
 
@@ -165,6 +165,18 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-07-09：本次生成报告 6 份：00-summary、01-projects-studied、02-ui-patterns、03-backend-patterns、04-performance-security-ops、05-user-project-optimization；未修改业务代码/配置/服务。报告路径：/root/daily-open-source-learning/2026-07-09
+  - id: `31773231-22be-4ead-8226-f8b6e241f1d5`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-07-09：研究 Coolify/Portainer/Sentry 后结论：任何写操作型运维面板必须有认证/RBAC、二次确认、审计日志、回滚说明；默认自动化应保持 report-only 候选报告。报告路径：/root/daily-open-source-learning/2026-07-09
+  - id: `521dec59-7b49-4ad7-b6a7-b14314311332`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-07-09：研究 TanStack Query/Recharts 后结论：Dashboard 前端应区分实时指标、可缓存配置、历史报表；用统一 server-state 缓存、错误、重试和刷新策略，图表高频数据需降采样。报告路径：/root/daily-open-source-learning/2026-07-09
+  - id: `be45a433-68c6-4b8c-a167-5cd9ed47f8cf`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-07-09：研究 Homepage/Glance/Grafana 后结论：用户服务器适合先做只读运维首页，聚合服务入口、端口、systemd、Docker、Nginx、shared-memory health 和每日报告链接。报告路径：/root/daily-open-source-learning/2026-07-09
+  - id: `4aa4afe3-bc48-4908-b7fe-d0ff655c260e`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-07-09：研究 Netdata/Beszel/Uptime Kuma 后结论：服务器监控优先采用轻量 agent/只读探针/状态页/通知闭环，避免 Dashboard 直接高频扫描 procfs/docker API。报告路径：/root/daily-open-source-learning/2026-07-09
+  - id: `b200a519-18b8-4daf-9c5e-d005a81b8b37`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-07-09：研究 LiteLLM/Helicone/Langfuse 后结论：LLM 网关应统一 OpenAI-compatible schema、provider adapter、fallback、成本/延迟/token 观测与非敏感审计字段，先设计日志 schema 再接入生产。报告路径：/root/daily-open-source-learning/2026-07-09
+  - id: `f44a24cc-3a90-43c8-be96-9c4527003eb0`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-07-08：完成 11 个开源项目学习，覆盖 LiteLLM、Helicone、Langfuse、Open WebUI、Uptime Kuma、Beszel、Glance、Coolify、Grafana、Portainer、Homepage。高价值结论：LLM 网关应统一 provider registry/fallback/预算/限流/审计；LLM observability 应采用 request/trace/session/eval 结构化事件；小型监控可先用 SQLite+状态页；服务器监控适合 hub/agent；危险动作必须白名单+confirm+审计。报告路径：/root/daily-open-source-learning/2026-07-08/reports/
   - id: `1684b8ef-1123-4111-a04a-dfefc9b63322`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source, hermes`
 - **[success/shared]** 每日开源学习 2026-07-07：完成 12 个开源项目学习，覆盖 Beszel、Glance、Uptime Kuma、Langfuse、LiteLLM、Helicone、Open WebUI、Coolify、Portainer、Netdata、Homarr、one-api。高价值结论：小服务器监控优先轻量只读 dashboard；LLM 网关应分离 routing 与 observability；SSE streaming 需独立记录首包、断流、超时；高风险 Docker/systemd/GitHub/DB 动作保持 report-only/confirm/audit；Dashboard 首页适合 Glance/Homarr 风格扫读。报告路径：/root/daily-open-source-learning/2026-07-07/
