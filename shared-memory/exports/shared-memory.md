@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-07-09T15:00:52+00:00
+Updated: 2026-07-09T18:11:24+00:00
 
 ## Active Memories by Layer
 
@@ -171,6 +171,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-07-10：研究 12 个开源项目（Beszel、Glance、Uptime Kuma、LiteLLM、Portkey AI Gateway、Helicone、Langfuse、Open WebUI、LibreChat、OpenHands、Coolify、Netdata）。核心结论：本服务器应优先建设只读 inventory、cron JSONL、LLM 网关观测 schema、密集型 Dashboard 和默认脱敏事件流；Nginx SSE、rate limit/fallback、数据库事件仓库、告警渠道均需用户确认后再改。报告路径：/root/daily-open-source-learning/2026-07-10/
+  - id: `1c41017f-694b-4188-9fb6-ae3028e1684e`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source, observability`
 - **[success/shared]** 每日开源学习 2026-07-09：本次生成报告 6 份：00-summary、01-projects-studied、02-ui-patterns、03-backend-patterns、04-performance-security-ops、05-user-project-optimization；未修改业务代码/配置/服务。报告路径：/root/daily-open-source-learning/2026-07-09
   - id: `31773231-22be-4ead-8226-f8b6e241f1d5`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-07-09：研究 Coolify/Portainer/Sentry 后结论：任何写操作型运维面板必须有认证/RBAC、二次确认、审计日志、回滚说明；默认自动化应保持 report-only 候选报告。报告路径：/root/daily-open-source-learning/2026-07-09
