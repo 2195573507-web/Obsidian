@@ -27,6 +27,7 @@ tags: [vault, agents]
 - [state] OpenClaw 工作区位于 `/root/.openclaw/workspace` (updated: 2026-06-27)
 - [state] 记忆学习目录为 `hermes-openclaw-learning/`，包含项目地图、用户偏好、失败经验、成功模式、经验卡和评测模板 (updated: 2026-06-27)
 - [state] 本地记忆治理优先做审计、压缩建议和归档候选，不直接改共享记忆服务 (updated: 2026-06-27)
+- [service_state] ESP 服务器（关键词：`esp服务器`、`ESP服务器`、`ESP-server`、`esp-server`）：IP `124.221.162.188`；SSH 旧操作使用 `ubuntu@124.221.162.188` 与 key `/root/.ssh/openclaw_124_221_162_188`；GitHub 仓库 `git@github.com:2195573507-web/ESP-server.git`；服务器侧曾见 clone 路径 `/home/ubuntu/ESP-server` 与 `/opt/ESP-server`，二者可能不一致；`/opt/ESP-server` 旧记录曾有脏状态 `M db/database.db` 和未跟踪 `cache/`，不要未确认覆盖；旧 smoke regression 在 `scripts/smoke-regression.js` 出现 `502 != 200`；做 `main/api/ui` 分支合并、push 或部署前先检查两个 clone、GitHub remote、脏文件和分支策略。详见 OpenClaw wiki `syntheses/esp-server-memory-archive.md` 与共享记忆 `e23814ff-9835-4cb2-9653-a97a855cc3b2`。(updated: 2026-07-09)
 
 ## 待办/进行中的事
 - [todo] 维持 OpenClaw 工作记忆和学习目录的可检索性，定期补充经验卡、失败库和成功模式 (updated: 2026-06-27)

@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-07-09T04:00:23+00:00
+Updated: 2026-07-09T10:00:20+00:00
 
 ## Active Memories by Layer
 
@@ -34,8 +34,14 @@ Updated: 2026-07-09T04:00:23+00:00
 
 ### Service State
 
+- **[service_state/shared]** ESP 服务器别名召回：关键词 esp服务器 等同于 ESP、ESP服务器、ESP-server、esp-server、124.221.162.188、/opt/ESP-server；遇到 esp服务器 时应召回 ESP server access/repository state：IP 124.221.162.188，SSH ubuntu@124.221.162.188，key /root/.ssh/openclaw_124_221_162_188，仓库 git@github.com:2195573507-web/ESP-server.git，详细共享记忆 4cbc0530-0d79-49ec-ab0c-3c12feefaa3d。
+  - id: `6443035c-e607-463e-95d4-1e76ae32d765`; source: `hermes`; importance: `95`; sensitivity: `shared`; tags: `esp服务器, ESP服务器, esp-server, ESP-server, 124.221.162.188`
+- **[service_state/shared]** ESP 服务器召回索引：当用户提到 ESP、ESP-server、esp-server、124.221.162.188、/opt/ESP-server、/home/ubuntu/ESP-server、openclaw_124_221_162_188 时，应召回这条事实：ESP server IP 是 124.221.162.188；SSH 旧操作用 ubuntu@124.221.162.188 和 /root/.ssh/openclaw_124_221_162_188；GitHub 仓库 git@github.com:2195573507-web/ESP-server.git；服务器侧可能有 /home/ubuntu/ESP-server 与 /opt/ESP-server 两个 clone；/opt/ESP-server 旧记录有 M db/database.db 和未跟踪 cache/，不要未确认覆盖；旧 smoke regression 出现 scripts/smoke-regression.js 的 502 != 200；合并、push、部署前先检查两个 clone、remote、脏文件和分支策略。详细归档见 /root/.openclaw/wiki/main/syntheses/esp-server-memory-archive.md；完整共享记忆见 e23814ff-9835-4cb2-9653-a97a855cc3b2。
+  - id: `4cbc0530-0d79-49ec-ab0c-3c12feefaa3d`; source: `hermes`; importance: `95`; sensitivity: `shared`; tags: `esp, esp-server, ESP-server, 124.221.162.188, openclaw, github`
 - **[service_state/shared]** 2026-06-25 记忆架构第一阶段（非 OpenClaw 侧）已执行：Hermes MEMORY.md 重构为 Working Memory 四区块；共享记忆中 8 条 OpenClaw temporary 迁移噪音和 3 条重复 qwen 历史细节已 disabled；保留 qwen 当前禁用/移除的两条高优先级 canonical decision。
   - id: `memory-cleanup-2026-06-25-hermes-shared`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `hermes, shared-memory, memory-architecture, cleanup`
+- **[service_state/shared]** ESP 服务器长期事实：ESP server IP 为 124.221.162.188；此前 SSH 操作使用 ubuntu@124.221.162.188，key 文件为 /root/.ssh/openclaw_124_221_162_188；GitHub 仓库为 git@github.com:2195573507-web/ESP-server.git；服务器侧曾见 clone 路径 /home/ubuntu/ESP-server 与 /opt/ESP-server，二者可能不一致；/opt/ESP-server 旧记录曾有脏状态 M db/database.db 与未跟踪 cache/，不要未确认覆盖；旧 smoke regression 在 scripts/smoke-regression.js 出现 502 != 200；进行 main/api/ui 分支合并、push 或服务器部署前，应先检查两个 clone、GitHub remote、工作区脏文件和分支策略。来源：OpenClaw wiki /root/.openclaw/wiki/main/syntheses/esp-server-memory-archive.md。
+  - id: `e23814ff-9835-4cb2-9653-a97a855cc3b2`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `esp-server, ESP-server, openclaw, hermes, server, github`
 - **[service_state/shared]** Hermes has a dedicated shared-agent-memory skill at /root/.hermes/skills/shared-agent-memory/SKILL.md. For durable cross-agent recall/save, Hermes should use shared-memory-client against http://127.0.0.1:9400; OpenClaw indexes the shared export with local Ollama nomic-embed-text embeddings.
   - id: `7731e550-13b3-45af-b82f-6667e7dab6fa`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `hermes, openclaw, shared-memory`
 - **[service_state/shared]** 已创建每日 Docker/磁盘/日志增长巡检任务：每天 BJT 11:20（UTC 03:20）运行，任务 ID 9539f426aa9f。任务只读检查 Docker 容器健康、磁盘/inode、大目录增长、日志/WAL/数据库风险；明确禁止删除、移动、清理、重启或修改代码/配置。
