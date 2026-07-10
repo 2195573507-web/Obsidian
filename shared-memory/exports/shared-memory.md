@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-07-10T15:07:04+00:00
+Updated: 2026-07-10T18:05:15+00:00
 
 ## Active Memories by Layer
 
@@ -13,6 +13,8 @@ Updated: 2026-07-10T15:07:04+00:00
 
 - **[fact/shared]** 端到端验证：Hermes 和 OpenClaw 现在通过 shared-agent-memory 服务共享长期记忆，服务端口 9400，导出文件挂载到双方工作区。
   - id: `0428af60-f9aa-4b39-a855-e524bdaa05b2`; source: `hermes`; importance: `9`; sensitivity: `shared`; tags: `e2e, shared-memory`
+- **[fact/shared]** 每日开源学习 2026-07-10：本机当前可见的关键服务态包括 /opt 下的 hermes-agent、openclaw、sub2api、hermes-system-monitor、atlas-observe、shared-agent-memory 等目录；systemd 中可见 hermes-gateway、modelcheck、nginx、docker、containerd、多个 atlas-* 服务；Docker 中可见 sub2api、sub2api-postgres、sub2api-redis、upstream-hub-standalone、maibot 相关容器；监听端口中可见 80/443/8080/8420/9400/18888/19900/19850/19800/19700/19600/19500/19400/19300/19200/19100/19000 等。报告路径：/root/daily-open-source-learning/2026-07-10/reports/
+  - id: `f28cab4a-00df-4f31-a4d2-bbd3407b0946`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, ops`
 - **[fact/shared]** 每日开源学习 2026-06-26：本机长期关注目录包含 /opt/hermes-agent /opt/openclaw /opt/sub2api /opt/shared-agent-memory /opt/hermes-dashboard /opt/hermes-system-monitor /opt/server-observability-index；当前服务链路含 nginx、docker、ollama、shared-agent-memory、openclaw-gateway、hermes-gateway。
   - id: `472719a3-e09e-4113-9d01-09de234fe658`; source: `hermes-cron`; importance: `6`; sensitivity: `shared`; tags: `learning, server, openclaw`
 - **[fact/shared]** 创建 cron 定时任务时，所有时间应以北京时间（UTC+8）为准，cron 表达式需转换为 UTC（BJT - 8h）。允许安排北京时间 00:00-07:00 的任务，按用户指定执行。所有任务输出使用中文。多任务流水线应清晰标注 BJT 和 UTC 双时区。
@@ -171,6 +173,10 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-07-10：后端/可观测性学习重点是 Prometheus 的 pull 模型、服务发现和 federation，LiteLLM 的 OpenAI 兼容网关与虚拟 key/spend tracking/guardrails，Glances 的 Web/API/MCP 三种暴露方式，以及 Beszel 的 hub-agent 架构。报告路径：/root/daily-open-source-learning/2026-07-10/reports/
+  - id: `45eda7cd-35d0-4efb-b5a7-9138472c7836`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `backend, observability, gateway`
+- **[success/shared]** 每日开源学习 2026-07-10：完成监控/网关/UI/后端/运维方向的开源学习，重点看了 Netdata、Beszel、Open WebUI、LiteLLM、Prometheus、Grafana、Glances、Portainer；形成的可复用结论是：边缘采集+中心展示比全量回传更省资源，OpenAI 兼容网关适合作为多模型统一入口，现代运维面板普遍用前后端分离和 API 生成来控制复杂度。报告路径：/root/daily-open-source-learning/2026-07-10/reports/
+  - id: `ab09e423-badb-427f-8e06-f9a7aa3c0b56`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
 - **[success/shared]** 每日开源学习 2026-07-10：研究 12 个开源项目（Beszel、Glance、Uptime Kuma、LiteLLM、Portkey AI Gateway、Helicone、Langfuse、Open WebUI、LibreChat、OpenHands、Coolify、Netdata）。核心结论：本服务器应优先建设只读 inventory、cron JSONL、LLM 网关观测 schema、密集型 Dashboard 和默认脱敏事件流；Nginx SSE、rate limit/fallback、数据库事件仓库、告警渠道均需用户确认后再改。报告路径：/root/daily-open-source-learning/2026-07-10/
   - id: `1c41017f-694b-4188-9fb6-ae3028e1684e`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source, observability`
 - **[success/shared]** 每日开源学习 2026-07-09：本次生成报告 6 份：00-summary、01-projects-studied、02-ui-patterns、03-backend-patterns、04-performance-security-ops、05-user-project-optimization；未修改业务代码/配置/服务。报告路径：/root/daily-open-source-learning/2026-07-09
@@ -217,6 +223,8 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `8f697c48-57c2-4300-9632-f223443ccba7`; source: `hermes`; importance: `7`; sensitivity: `shared`; tags: `openclaw, hermes, memory`
 - **[success/shared]** 每日开源学习 2026-06-24：研究 Beszel/Glance/Uptime Kuma/Homepage/LiteLLM/Portkey Gateway/Open WebUI。高价值结论：轻量监控可采用 Hub+Agent 或配置驱动 widget；LLM 网关应抽象认证、路由、fallback、预算、限流、审计；LLM 流式优先 SSE，双向控制再用 WebSocket；SQLite 适合轻量状态但需 WAL/备份/retention；Dashboard 优先做只读服务卡片、端口、systemd/docker、Nginx 摘要；P2 变更如限流、Nginx、Postgres、RBAC 需用户确认。报告路径：/root/daily-open-source-learning/2026-06-24
   - id: `370f4ca3-e215-459c-845b-d67fdea89f6e`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source`
+- **[success/shared]** 每日开源学习 2026-07-10：UI/前端学习偏向于运维工具常见模式，Open WebUI 强调响应式、PWA、实时工作流、Notes/Channels/Automations 和插件扩展；Grafana 强调探索式分析、模板变量、混合数据源和面向插件的可视化；Portainer 的关键工程点是 Go API 注解生成 TS SDK，避免手写前后端协议漂移。报告路径：/root/daily-open-source-learning/2026-07-10/reports/
+  - id: `d4a3977b-ca11-49f1-987f-9ccba3cb0415`; source: `hermes-cron`; importance: `6`; sensitivity: `shared`; tags: `ui, frontend, open-source`
 - **[success/shared]** 每日开源学习 2026-06-26：Healthchecks 的 Period/Grace Time + HTTP/Email ping 模型很适合轻量 cron 告警；Grafana 的多数据源 Explore 和插件化适合作为统一观测入口参考。
   - id: `d367374f-68f4-4417-b063-12eae9c6ce09`; source: `hermes-cron`; importance: `6`; sensitivity: `shared`; tags: `learning, observability, server`
 - **[success/openclaw]** Important paths: OpenClaw workspace `/root/.openclaw/workspace/`; Hermes memories `/root/.hermes/memories/`; Hermes dashboard `/opt/hermes-dashboard/`; monitor `/opt/hermes-system-monitor/`; vault `/root/obsidian-vault/`.
