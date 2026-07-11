@@ -1,6 +1,6 @@
 # Shared Agent Memory
 
-Updated: 2026-07-11T15:00:46+00:00
+Updated: 2026-07-11T18:10:51+00:00
 
 ## Active Memories by Layer
 
@@ -173,6 +173,12 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
   - id: `6bfb048d-74ba-4c49-b0dc-cb01ae359f8c`; source: `openclaw`; importance: `80`; sensitivity: `shared`; tags: `atlas, recall, shared-memory, obsidian`
 - **[success/shared]** 每日开源学习 2026-06-24（补做）：报告路径 /root/daily-open-source-learning/2026-06-24。今日学习监控/运维面板（Grafana/Prometheus/Loki/Alertmanager/Netdata/Beszel/Dashdot/Uptime Kuma/Glance/Portainer/1Panel/Coolify）、AI Agent/API Gateway（Open WebUI/LibreChat/Dify/LiteLLM/Langfuse/Helicone/one-api/new-api/Flowise/AnythingLLM/OpenHands/Aider/Continue/Portkey）以及 UI/后端/性能/安全部署（shadcn/Radix/Tailwind/Ant Design/ECharts/uPlot/TanStack/FastAPI/Go/SQLite WAL/Postgres/Nginx SSE/Docker/systemd/OpenTelemetry）。关键结论：当前服务器项目应保持自动任务只读；monitor 继续轻量架构但 collector manager 化；APIUS/Sub2API 重点做流式质量与错误分型观测；OpenClaw 重点观察模型超时、runRetries、QQBot 连接日志；后续优化建议见 reports/05-user-project-optimization.md。
   - id: `104be4e6-6a18-4f8f-8e8a-7b4e250ecf4e`; source: `hermes`; importance: `8`; sensitivity: `shared`; tags: `learning, open-source, server, hermes`
+- **[success/shared]** 每日开源学习 2026-07-12 可复用结论：运维 Dashboard 建议采用 Glance 风格只读首页 + Beszel/Uptime Kuma 风格服务健康 + TanStack Table 风格日志/任务表格；所有写配置、重启服务、禁用/合并记忆等动作必须确认和审计。报告路径：/root/daily-open-source-learning/2026-07-12/reports/
+  - id: `c0ed34e0-564f-4396-8cc2-bb9267dd8733`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, dashboard, observability`
+- **[success/shared]** 每日开源学习 2026-07-12 可复用结论：LLM 网关优化应先从 provider adapter、router/fallback、budget/rate-limit、SSE 首 token/chunk/断流观测、去敏 usage/cost 日志入手；小规模可用 SQLite WAL，中大规模再评估 ClickHouse/Loki，避免过早增加运维复杂度。报告路径：/root/daily-open-source-learning/2026-07-12/reports/
+  - id: `e794c39b-8398-40e5-8f66-e97d59372954`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, llm-gateway, sub2api`
+- **[success/shared]** 每日开源学习 2026-07-12：完成 14 个开源项目学习，覆盖 Grafana、Netdata、Beszel、Glance、Open WebUI、Langfuse、LiteLLM、Helicone、Portkey Gateway、Uptime Kuma、Prometheus、Loki、TanStack Table、Full Stack FastAPI Template。核心结论：服务器项目应优先建设只读服务索引页、Sub2API/APIUS 请求日志 schema、LLM streaming 兼容测试、provider 健康矩阵、shared-memory 只读治理视图；危险操作保持确认制。报告路径：/root/daily-open-source-learning/2026-07-12/
+  - id: `252c2904-b917-4525-ba21-4992b0270a4c`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `learning, server, open-source, hermes`
 - **[success/shared]** 每日开源学习 2026-07-10：后端/可观测性学习重点是 Prometheus 的 pull 模型、服务发现和 federation，LiteLLM 的 OpenAI 兼容网关与虚拟 key/spend tracking/guardrails，Glances 的 Web/API/MCP 三种暴露方式，以及 Beszel 的 hub-agent 架构。报告路径：/root/daily-open-source-learning/2026-07-10/reports/
   - id: `45eda7cd-35d0-4efb-b5a7-9138472c7836`; source: `hermes-cron`; importance: `7`; sensitivity: `shared`; tags: `backend, observability, gateway`
 - **[success/shared]** 每日开源学习 2026-07-10：完成监控/网关/UI/后端/运维方向的开源学习，重点看了 Netdata、Beszel、Open WebUI、LiteLLM、Prometheus、Grafana、Glances、Portainer；形成的可复用结论是：边缘采集+中心展示比全量回传更省资源，OpenAI 兼容网关适合作为多模型统一入口，现代运维面板普遍用前后端分离和 API 生成来控制复杂度。报告路径：/root/daily-open-source-learning/2026-07-10/reports/
