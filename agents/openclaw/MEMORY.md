@@ -2,7 +2,7 @@
 title: "MEMORY"
 type: note
 category: "agents"
-updated: 2026-07-05
+updated: 2026-07-12
 managed_by: Hermes
 tags: [vault, agents]
 ---
@@ -41,6 +41,13 @@ tags: [vault, agents]
 - [[MOC|知识库导航]]
 
 ## 会话压缩摘要
+
+- [summary/shared] 压缩 `2026-06-23.md`：关键决策3条，完成工作0条，问题0条，待跟进0条；高价值摘要：用户要求删除“晚上不允许做任务 / 避免北京时间 00:00-07:00 创建任务”的旧规则；该规则现在废弃。；详见 [[记忆治理/openclaw-session-memory-compact-20260712T030000Z|压缩报告]]。(updated: 2026-07-12) <!-- compact:2026-06-23.md:4ae3de7521cf0152 -->
+- [summary/shared] 压缩 `2026-06-24.md`：关键决策12条，完成工作5条，问题0条，待跟进0条；高价值摘要：依赖默认自动压缩（200K tokens 窗口），未配置主动修剪；详见 [[记忆治理/openclaw-session-memory-compact-20260712T030000Z|压缩报告]]。(updated: 2026-07-12) <!-- compact:2026-06-24.md:af4ea93828053bf7 -->
+- [summary/shared] 压缩 `2026-06-25.md`：关键决策0条，完成工作4条，问题5条，待跟进0条；高价值摘要：User asked for deep server benchmark excluding `/v1/chat/completions` pressure test (`3.3不做`). Final benchmark report saved at `/root/.openclaw/workspace/reports/server_deep_bench_20260625_145811.md`; raw log at `/root/.openclaw/workspace/reports/server_deep_b；详见 [[记忆治理/openclaw-session-memory-compact-20260712T030000Z|压缩报告]]。(updated: 2026-07-12) <!-- compact:2026-06-25.md:7f3fcd67108363aa -->
+- [summary/shared] 压缩 `2026-06-26.md`：关键决策0条，完成工作0条，问题0条，待跟进0条；高价值摘要：2026-06-26.md 已压缩归档，未提取到需要提升为 Layer 1 的高价值条目。；详见 [[记忆治理/openclaw-session-memory-compact-20260712T030000Z|压缩报告]]。(updated: 2026-07-12) <!-- compact:2026-06-26.md:e3b0c44298fc1c14 -->
+- [summary/shared] 压缩 `2026-06-27.md`：关键决策0条，完成工作0条，问题6条，待跟进3条；高价值摘要：Subagent roadmap gap audit concluded remaining safe next priorities are: unified log index/recent-errors enrichment, web search + research report queue job, task completion notification dry-run/opt-in, browser smoke tests, route/model recommendation dry-run. I；详见 [[记忆治理/openclaw-session-memory-compact-20260712T030000Z|压缩报告]]。(updated: 2026-07-12) <!-- compact:2026-06-27.md:8c0d946328fc5d58 -->
+
 
 - [summary/shared] 压缩 `2026-06-19.md`：关键决策0条，完成工作2条，问题0条，待跟进0条；高价值摘要：Recent web-health task: checked `:9000`, `:9100`, `:9200`; all services/APIs healthy. Dashboard CSS bug `--btn-hover` undefined was fixed. Token/cost trend API issue was a test-key mistake; data was normal.；详见 [[记忆治理/openclaw-session-memory-compact-20260705T030002Z|压缩报告]]。(updated: 2026-07-05) <!-- compact:2026-06-19.md:ff28c4bc65beeb27 -->
 - [summary/shared] 压缩 `2026-06-20.md`：关键决策0条，完成工作2条，问题2条，待跟进1条；高价值摘要：Next continuation should run `systemctl daemon-reload && systemctl enable --now ollama`, verify `curl http://127.0.0.1:11434/api/tags`, then `ollama pull nomic-embed-text`, test `/api/embeddings`, configure OpenClaw embedding provider, rebuild memory index, an；详见 [[记忆治理/openclaw-session-memory-compact-20260705T030002Z|压缩报告]]。(updated: 2026-07-05) <!-- compact:2026-06-20.md:e9eee5438dca8c69 -->
